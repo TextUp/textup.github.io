@@ -1,0 +1,12 @@
+.masthead__inner-wrap {
+    padding: 0.5 * $spacing;
+}
+
+.page__footer footer {
+    padding: 1em;
+    margin-top: 0;
+
+    @include breakpoint($x-large) {
+        padding: 1em 0;
+    }
+}

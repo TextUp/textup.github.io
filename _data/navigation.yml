@@ -1,0 +1,102 @@
+articles:
+  - title: Getting Started
+    description: "New to TextUp? Set up your account and learn the basics"
+    children:
+      - title: "Welcome"
+        url: /articles/getting-started-welcome/
+      - title: "Logging in"
+        url: /articles/getting-started-logging-in/
+      - title: "Setting up"
+        url: /articles/getting-started-setting-up/
+      - title: "Interface tour"
+        url: /articles/getting-started-tour/
+      - title: "TextUp on mobile devices"
+        url: /articles/getting-started-textup-mobile/
+
+  - title: Availability
+    description: "Control how TextUp behaves at work and off-hours"
+    children:
+      - title: "Receiving notifications"
+        url: /articles/notifications-personal-phone/
+      - title: "Setting availability"
+        url: /articles/notifications-availability/
+      - title: "Customizing away message"
+        url: /articles/notifications-away-message/
+
+  # - title: Contact
+  #   description: "Manage contacts with TextUp"
+  #   children:
+  #     - title: "Adding contacts"
+  #       url: /articles/contacts-adding/
+  #     - title: "Managing contact numbers"
+  #       url: /articles/contacts-numbers/
+  #     - title: "Working with multiple contacts"
+  #       url: /articles/contacts-multiple/
+  #     - title: "Archiving contacts"
+  #       url: /articles/contacts-archiving/
+  #     - title: "Blocking contacts"
+  #       url: /articles/contacts-blocking/
+
+  # - title: Tags
+  #   description: "Work with groups of contacts at the same time"
+  #   children:
+  #       - title: "Creating tags"
+  #         url: /articles/tags-creating/
+  #       - title: "Using tags"
+  #         url: /articles/tags-using/
+  #       - title: "Modifying tags"
+  #         url: /articles/tags-modifying/
+
+  - title: The TextUp Record
+    description: "Start building a record of communication in TextUp"
+    children:
+      # - title: "Text messages"
+      #   url: /articles/record-text-messages/
+      # - title: "Phone calls"
+      #   url: /articles/record-phone-calls/
+      # - title: "Scheduling messages"
+      #   url: /articles/record-scheduling-messages/
+      - title: "Case notes"
+        url: /articles/record-case-notes/
+      # - title: "Sharing"
+      #   url: /articles/record-sharing/
+
+  # - title: Teams
+  #   description: "Work as a team with colleagues using TextUp"
+  #   children:
+  #     - title: "Switching between teams"
+  #       url: /articles/teams-switching/
+  #     - title: "Team availability"
+  #       url: /articles/teams-availability/
+  #     - title: "Team record keeping"
+  #       url: /articles/teams-record-keeping/
+  #     - title: "Team phone calls"
+  #       url: /articles/teams-phone-calls/
+
+  - title: Security
+    description: "Keep your data secure using TextUp"
+    children:
+      - title: "Resetting password"
+        url: /articles/security-resetting-password/
+      - title: "Lock code"
+        url: /articles/security-lock-code/
+
+  # - title: Admin
+  #   description: "Manage people in your agency with TextUp"
+  #   children:
+  #     - title: "Inviting users"
+  #       url: /articles/admin-inviting-users/
+  #     - title: "Managing users"
+  #       url: /articles/admin-managing-users/
+  #     - title: "Managing teams"
+  #       url: /articles/admin-managing-teams/
+  #     - title: "Managing phone numbers"
+  #       url: /articles/admin-managing-phone-numbers/
+  #     - title: "Enabling sharing"
+  #       url: /articles/admin-enabling-sharing/
+
+  # - title: Migration
+  #   description: "Switching to TextUp from another service?"
+  #   children:
+  #     - title: "From Google Voice"
+  #       url: /articles/migration-google-voice/

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="t-body t-grid t-grid--align-stretch">
+    {% for section in site.data.navigation.articles %}
+        <div class="t-help-section t-grid__item t-padding--all-half">
+            <div class="t-help-section__content t-padding--all t-height--full">
+                <a href="{{ section.children.first.url | prepend: site.baseurl }}" class="t-help-section__link">
+                    <h2 class="t-help-section__title">{{ section.title }}</h2>
+                </a>
+                <b>
+                   {{ section.children.size }}
+                    {% if section.children.size > 1 %}
+                        articles
+                    {% else %}
+                        article
+                    {% endif %}
+                </b>
+                <p>{{ section.description }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>

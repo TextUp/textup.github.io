@@ -1,1 +1,41 @@
-theme: jekyll-theme-minimal
+remote_theme: "mmistakes/minimal-mistakes"
+
+title: "TextUp Support"
+title_separator: "|"
+name: "TextUp"
+description: "Support and help center for the TextUp case management and documentation platform."
+url: "http://support.textup.org"
+baseurl: ""
+repository: "TextUp/textup.github.io"
+search: true
+
+# Caution: Inline JavaScript comments can cause problems with compress.html, so be sure to
+# /* comment this way */ and avoid // these sorts of comments.
+compress_html:
+  clippings: all
+  ignore:
+    envs: development  # disable compression in dev environment
+
+sass:
+    sass_dir: _sass
+
+plugins:
+  - jekyll-remote-theme
+
+collections:
+  articles:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: single
+      read_time: true
+      toc: true
+      toc_label: "In this article"
+      sidebar:
+        nav: "articles"
+
