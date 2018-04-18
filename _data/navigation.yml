@@ -50,16 +50,16 @@ articles:
   - title: The TextUp Record
     description: "Start building a record of communication in TextUp"
     children:
-      # - title: "Text messages"
-      #   url: /articles/record-text-messages/
-      # - title: "Phone calls"
-      #   url: /articles/record-phone-calls/
-      # - title: "Scheduling messages"
-      #   url: /articles/record-scheduling-messages/
+      - title: "Text messages"
+        url: /articles/record-text-messages/
+      - title: "Phone calls"
+        url: /articles/record-phone-calls/
+      - title: "Scheduling messages"
+        url: /articles/record-scheduling-messages/
       - title: "Case notes"
         url: /articles/record-case-notes/
-      # - title: "Sharing"
-      #   url: /articles/record-sharing/
+      - title: "Sharing"
+        url: /articles/record-sharing/
 
   # - title: Teams
   #   description: "Work as a team with colleagues using TextUp"
