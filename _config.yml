@@ -7,6 +7,7 @@ description: "Support and help center for the TextUp case management and documen
 url: "http://support.textup.org"
 repository: "TextUp/textup.github.io"
 search: true
+github: [metadata]
 
 # Caution: Inline JavaScript comments can cause problems with compress.html, so be sure to
 # /* comment this way */ and avoid // these sorts of comments.
