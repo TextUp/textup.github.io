@@ -13,7 +13,7 @@ permalink: /articles/tags-creating/
 
 {% include step-separator.md %}
 
-![View tag- mobile]({{ site.baseurl }}/assets/images/tagsviewtagmobile.png){: .align-right} Now when you scroll through the side bar, you should see your new tag.
+![View tag- mobile]({{ site.baseurl }}/assets/images/tagsviewtagmobile.jpg){: .align-right} Now when you scroll through the side bar, you should see your new tag.
 
 {% include step-separator.md %}
 
