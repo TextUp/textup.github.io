@@ -23,29 +23,43 @@ articles:
       - title: "Customizing away message"
         url: /articles/notifications-away-message/
 
-  # - title: Contact
-  #   description: "Manage contacts with TextUp"
-  #   children:
-  #     - title: "Adding contacts"
-  #       url: /articles/contacts-adding/
-  #     - title: "Managing contact numbers"
-  #       url: /articles/contacts-numbers/
-  #     - title: "Working with multiple contacts"
-  #       url: /articles/contacts-multiple/
-  #     - title: "Archiving contacts"
-  #       url: /articles/contacts-archiving/
-  #     - title: "Blocking contacts"
-  #       url: /articles/contacts-blocking/
+  - title: Contacts
+    description: "Manage contacts with TextUp"
+    children:
+      - title: "Adding contacts"
+        url: /articles/contacts-adding/
+      - title: "Multiple contact numbers"
+        url: /articles/contacts-numbers/
+      - title: "Archiving contacts"
+        url: /articles/contacts-archiving/
+      - title: "Unarchiving contacts"
+        url: /articles/contacts-unarchiving/
+      - title: "Blocking contacts"
+        url: /articles/contacts-blocking/
+      - title: "Unblocking contacts"
+        url: /articles/contacts-unblocking/
+      - title: "Multi-managing contacts"
+        url: /articles/contacts-multiple/
 
-  # - title: Tags
-  #   description: "Work with groups of contacts at the same time"
-  #   children:
-  #       - title: "Creating tags"
-  #         url: /articles/tags-creating/
-  #       - title: "Using tags"
-  #         url: /articles/tags-using/
-  #       - title: "Modifying tags"
-  #         url: /articles/tags-modifying/
+  - title: Tags
+    description: "Work with groups of contacts at the same time"
+    children:
+        - title: "Creating tags"
+          url: /articles/tags-creating/
+        - title: "Adding/removing contacts to a tag"
+          url: /articles/tags-add-remove/
+        - title: "Accessing the Tag Record"
+          url: /articles/tags-accessing-record/
+        - title: "Editing a tag"
+          url: /articles/tags-editing/
+        - title: "Messaging a tag"
+          url: /articles/tags-messaging/
+        - title: "Monitor tag message recipients"
+          url: /articles/tags-monitoring-recipients/
+        - title: "Scheduling messages to tags"
+          url: /articles/tags-scheduling-messages/
+        - title: "Adding notes to the Tag Record"
+          url: /articles/tags-adding-notes/
 
   - title: The TextUp Record
     description: "Start building a record of communication in TextUp"
