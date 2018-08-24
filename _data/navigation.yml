@@ -75,17 +75,21 @@ articles:
       - title: "Sharing"
         url: /articles/record-sharing/
 
-  # - title: Teams
-  #   description: "Work as a team with colleagues using TextUp"
-  #   children:
-  #     - title: "Switching between teams"
-  #       url: /articles/teams-switching/
-  #     - title: "Team availability"
-  #       url: /articles/teams-availability/
-  #     - title: "Team record keeping"
-  #       url: /articles/teams-record-keeping/
-  #     - title: "Team phone calls"
-  #       url: /articles/teams-phone-calls/
+  - title: Teams
+    description: "Work as a team with colleagues using TextUp"
+    children:
+      - title: "How team phones work"
+        url: /articles/teams-introduction/
+      - title: "How to create a team phone"
+        url: /articles/teams-creating/
+      - title: "How to access your team phone"
+        url: /articles/teams-accessing/
+      - title: "Team phones & availability"
+        url: /articles/teams-availability/
+      - title: "Team phone record keeping"
+        url: /articles/teams-record-keeping/
+      - title: "Removing a team phone"
+        url: /articles/teams-removing/
 
   - title: Security
     description: "Keep your data secure using TextUp"
@@ -95,22 +99,42 @@ articles:
       - title: "Lock code"
         url: /articles/security-lock-code/
 
-  # - title: Admin
-  #   description: "Manage people in your agency with TextUp"
-  #   children:
-  #     - title: "Inviting users"
-  #       url: /articles/admin-inviting-users/
-  #     - title: "Managing users"
-  #       url: /articles/admin-managing-users/
-  #     - title: "Managing teams"
-  #       url: /articles/admin-managing-teams/
-  #     - title: "Managing phone numbers"
-  #       url: /articles/admin-managing-phone-numbers/
-  #     - title: "Enabling sharing"
-  #       url: /articles/admin-enabling-sharing/
+  - title: Admin
+    description: "Manage people in your agency with TextUp"
+    children:
+      - title: "Accessing the admin dashboard"
+        url: /articles/admin-accessing/
+      - title: "Approving or rejecting staff accounts"
+        url: /articles/admin-pending-staff/
+      - title: "Inviting staff to create TextUp accounts"
+        url: /articles/admin-inviting-staff/
+      - title: "Assigning TextUp phone numbers to staff"
+        url: /articles/admin-assigning-numbers/
+      - title: "Changing a TextUp phone number"
+        url: /articles/admin-changing-numbers/
+      - title: "Giving and revoking administrator access"
+        url: /articles/admin-administrators/
+      - title: "Changing staff passwords and access"
+        url: /articles/admin-staff-passwords/
+      - title: "Transferring TextUp phone numbers"
+        url: /articles/admin-transferring-numbers/
+      - title: "Editing staff availability"
+        url: /articles/admin-staff-availability/
+      - title: "Deactivating TextUp phone numbers"
+        url: /articles/admin-deactivating-numbers/
+      - title: "Deactivating staff accounts"
+        url: /articles/admin-deactivating-staff-accounts/
+      - title: "Reactivating staff accounts"
+        url: /articles/admin-reactivating-staff-accounts/
+      - title: "Creating teams and team phones"
+        url: /articles/admin-creating-teams/
+      - title: "Adding and removing staff members from a team"
+        url: /articles/admin-team-membership/
+      - title: "Editing teams and team phones"
+        url: /articles/admin-editing-teams/
 
-  # - title: Migration
-  #   description: "Switching to TextUp from another service?"
-  #   children:
-  #     - title: "From Google Voice"
-  #       url: /articles/migration-google-voice/
+  - title: Migration
+    description: "Switching to TextUp from another service?"
+    children:
+      - title: "From Google Voice"
+        url: /articles/migration-google-voice/

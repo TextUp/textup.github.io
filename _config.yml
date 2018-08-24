@@ -4,7 +4,7 @@ title: "TextUp Support"
 title_separator: "|"
 name: "TextUp"
 description: "Support and help center for the TextUp case management and documentation platform."
-url: "http://support.textup.org"
+url: "https://support.textup.org"
 repository: "TextUp/textup.github.io"
 search: true
 github: [metadata]

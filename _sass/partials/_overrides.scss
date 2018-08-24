@@ -10,3 +10,25 @@
         padding: 1em 0;
     }
 }
+
+.nav__items > li {
+    margin-top: 1em;
+
+    &:not(:first-child) {
+        border-top: 1px solid lightgray;
+    }
+}
+
+.nav__sub-title {
+    color: $color-brand;
+    border-bottom-width: 0;
+}
+
+.nav__items ul li a {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    padding-right: 1em;
+    margin: 0.2em 0;
+}
