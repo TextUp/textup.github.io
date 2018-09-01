@@ -1,15 +1,29 @@
-<div class="masthead">
+<div class="masthead {% if page.url == "/" %}masthead--home{% endif %}">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="{{ '/' | absolute_url }}">
-          <img src="{{ site.baseurl }}/assets/images/logo.png" alt="TextUp logo" class="t-logo">
-          {{ site.title | remove: site.name }}
+          <img src="{{ site.baseurl }}/assets/images/logo.png" alt="TextUp logo">
         </a>
         <ul class="visible-links">
             <li class="masthead__menu-item">
-              <a href="mailto:connect@textup.org?Subject=From%20Support%20Center" target="_blank">
-                Contact Us
+              <a href="{{ site.baseurl }}/blog">
+                Blog
+              </a>
+            </li>
+            <li class="masthead__menu-item">
+              <a href="{{ site.baseurl }}/support">
+                Support
+              </a>
+            </li>
+            <li class="masthead__menu-item">
+              <a href="https://v2.textup.org" target="_blank" rel="noopener noreferrer">
+                API
+              </a>
+            </li>
+            <li class="masthead__menu-item">
+              <a href="https://app.textup.org" target="_blank" rel="noopener noreferrer">
+                <span class="text-brand text-bold">Launch</span>
               </a>
             </li>
         </ul>

@@ -57,30 +57,30 @@ $bg-color-states: hover regular;
         $prefix: "#{$state}-";
         $suffix: ":#{$state}";
     }
-    ".#{$prefix}bg-color#{$suffix}" {
+    .#{$prefix}bg-color#{$suffix} {
         @if ($state != 'regular') {
             transition: background-color 0.5s;
         }
         background-color: $bg-color;
 
-        "&.#{$prefix}bg-brand#{$suffix}" {
+        &.#{$prefix}bg-brand#{$suffix} {
             background-color: $brand-color;
             color: contrast-color($brand-color);
         }
-        "&.#{$prefix}bg-brand-dark#{$suffix}" {
+        &.#{$prefix}bg-brand-dark#{$suffix} {
             background-color: shade($brand-color);
             color: contrast-color(shade($brand-color));
         }
-        "&.#{$prefix}bg-dark#{$suffix}" {
+        &.#{$prefix}bg-dark#{$suffix} {
             background-color: shade($bg-color);
         }
-        "&.#{$prefix}bg-darkest#{$suffix}" {
+        &.#{$prefix}bg-darkest#{$suffix} {
             background-color: $bg-dark-color;
         }
-        "&.#{$prefix}bg-light#{$suffix}" {
+        &.#{$prefix}bg-light#{$suffix} {
             background-color: $bg-light-color;
         }
-        "&.#{$prefix}bg-lightest#{$suffix}" {
+        &.#{$prefix}bg-lightest#{$suffix} {
             background-color: $bg-lightest-color;
         }
     }

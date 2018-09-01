@@ -1,6 +1,6 @@
 ---
 title: "From Google Voice"
-permalink: /articles/migration-google-voice/
+permalink: /support/articles/migration-google-voice/
 ---
 
 Transferring your Google Voice number to a TextUp number is a three step process that this guide will walk you through. After the required documents are submitted, it takes between 2 to 4 weeks for the transfer process to complete. If anything goes wrong, we’ll be in touch to keep you updated about steps to fix the problem. When the transfer process completes, we’ll email you letting you know your TextUp account is all set up with your Google Voice number.
@@ -22,23 +22,23 @@ Before you can transfer your Google Voice number, you first need to unlock your 
 
 * Navigate your web browser to the [Google Voice unlocking page](https://www.google.com/voice/b/0/unlock). For added security, you will need to log in with your Google credentials again.
 
-![Screenshot of reauthenticating Google credentials]({{ site.baseurl }}/assets/images/migration-1.png){: .align-center}
+![Screenshot of reauthenticating Google credentials]({{ site.baseurl }}/assets/images/support/migration-1.png){: .align-center}
 
 * After signing in again, you will see a list of numbers. Make sure you the number you want to unlock is selected. Then press **Unlock my number**.
 
-![Screenshot of starting to unlock number]({{ site.baseurl }}/assets/images/migration-2.png){: .align-center}
+![Screenshot of starting to unlock number]({{ site.baseurl }}/assets/images/support/migration-2.png){: .align-center}
 
 * After clicking **Unlock my number**, you will see the following screens that will guide you through the process of paying the $3 unlocking fee.
 
-![Screenshot of confirming number unlock]({{ site.baseurl }}/assets/images/migration-3.png){: .align-center}
+![Screenshot of confirming number unlock]({{ site.baseurl }}/assets/images/support/migration-3.png){: .align-center}
 
-![Screenshot of completing unlock payment]({{ site.baseurl }}/assets/images/migration-4.png){: .align-center}
+![Screenshot of completing unlock payment]({{ site.baseurl }}/assets/images/support/migration-4.png){: .align-center}
 
 * After successfully paying. You will see the following confirmation and receive the following email. **Please forward the receipt email to [connect@textup.org](mailto:connect@textup.org)**. We need to submit this email as proof of your ownership of this phone number and also for reimbursement purposes.
 
-![Screenshot of unlock payment receipt]({{ site.baseurl }}/assets/images/migration-5.png){: .align-center}
+![Screenshot of unlock payment receipt]({{ site.baseurl }}/assets/images/support/migration-5.png){: .align-center}
 
-![Screenshot of receipt email]({{ site.baseurl }}/assets/images/migration-6.png){: .align-center}
+![Screenshot of receipt email]({{ site.baseurl }}/assets/images/support/migration-6.png){: .align-center}
 
 ## Complete required forms
 
@@ -63,6 +63,6 @@ https://drive.google.com/open?id=0B2IYZ7V2J7tKVmxOWG4tdDhLdUE
 This form asks you for additional information we need to submit your porting number request. The information we need from you is:
 * **The four digit PIN that use you access your Google Voice voicemail.** If you do not remember your PIN, there is [a Google help article that tells you how to change your PIN](https://support.google.com/voice/answer/165656?hl=en&ref_topic=1708439).
 
-![Screenshot of changing voicemail PIN steps]({{ site.baseurl }}/assets/images/migration-7.png){: .align-center}
+![Screenshot of changing voicemail PIN steps]({{ site.baseurl }}/assets/images/support/migration-7.png){: .align-center}
 
 * **The day of week that prefer the switch over to TextUp to take place.** After your porting number request is granted, we will receive a tentative date that the switchover will happen. During the switchover, you may not be able to receive text messages for up to 3 hours. To minimize disruption, you may specify the days of the week that you’d prefer the switchover will happen. We will try to reschedule the date to honor your request.

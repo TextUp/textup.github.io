@@ -15,7 +15,7 @@
 $abbrs: map-values($breakpoint-abbrs);
 @for $i from 1 through length($breakpoint-abbrs) {
 	$breakpoint-abbr: nth($breakpoint-abbrs, $i);
-	$breakpoint: nth($breakpoint-abbr, 1);
+	$breakpoint-key: nth($breakpoint-abbr, 1);
 	$abbr: nth($breakpoint-abbr, 2);
 	// mobile first: smallest breakpoint has no media query
 	@if $i == 1 {
@@ -31,7 +31,7 @@ $abbrs: map-values($breakpoint-abbrs);
 		@include responsive-clear("new-row", $abbr, $abbrs);
 	}
 	@else {
-		@include mq($from: $breakpoint) {
+		@include mq($from: $breakpoint-key) {
 			.#{$abbr}-full-row {
 				box-sizing: border-box;
 				width: 100%;

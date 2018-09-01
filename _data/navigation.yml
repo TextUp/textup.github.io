@@ -3,138 +3,138 @@ articles:
     description: "New to TextUp? Set up your account and learn the basics"
     children:
       - title: "Welcome"
-        url: /articles/getting-started-welcome/
+        url: /support/articles/getting-started-welcome/
       - title: "Logging in"
-        url: /articles/getting-started-logging-in/
+        url: /support/articles/getting-started-logging-in/
       - title: "Setting up"
-        url: /articles/getting-started-setting-up/
+        url: /support/articles/getting-started-setting-up/
       - title: "Interface tour"
-        url: /articles/getting-started-tour/
+        url: /support/articles/getting-started-tour/
       - title: "TextUp on mobile devices"
-        url: /articles/getting-started-textup-mobile/
+        url: /support/articles/getting-started-textup-mobile/
 
   - title: Availability
     description: "Control how TextUp behaves at work and off-hours"
     children:
       - title: "Receiving notifications"
-        url: /articles/notifications-personal-phone/
+        url: /support/articles/notifications-personal-phone/
       - title: "Setting availability"
-        url: /articles/notifications-availability/
+        url: /support/articles/notifications-availability/
       - title: "Customizing away message"
-        url: /articles/notifications-away-message/
+        url: /support/articles/notifications-away-message/
 
   - title: Contacts
     description: "Manage contacts with TextUp"
     children:
       - title: "Adding contacts"
-        url: /articles/contacts-adding/
+        url: /support/articles/contacts-adding/
       - title: "Multiple contact numbers"
-        url: /articles/contacts-numbers/
+        url: /support/articles/contacts-numbers/
       - title: "Archiving contacts"
-        url: /articles/contacts-archiving/
+        url: /support/articles/contacts-archiving/
       - title: "Unarchiving contacts"
-        url: /articles/contacts-unarchiving/
+        url: /support/articles/contacts-unarchiving/
       - title: "Blocking contacts"
-        url: /articles/contacts-blocking/
+        url: /support/articles/contacts-blocking/
       - title: "Unblocking contacts"
-        url: /articles/contacts-unblocking/
+        url: /support/articles/contacts-unblocking/
       - title: "Multi-managing contacts"
-        url: /articles/contacts-multiple/
+        url: /support/articles/contacts-multiple/
 
   - title: Tags
     description: "Work with groups of contacts at the same time"
     children:
         - title: "Creating tags"
-          url: /articles/tags-creating/
+          url: /support/articles/tags-creating/
         - title: "Adding/removing contacts to a tag"
-          url: /articles/tags-add-remove/
+          url: /support/articles/tags-add-remove/
         - title: "Accessing the Tag Record"
-          url: /articles/tags-accessing-record/
+          url: /support/articles/tags-accessing-record/
         - title: "Editing a tag"
-          url: /articles/tags-editing/
+          url: /support/articles/tags-editing/
         - title: "Messaging a tag"
-          url: /articles/tags-messaging/
+          url: /support/articles/tags-messaging/
         - title: "Monitor tag message recipients"
-          url: /articles/tags-monitoring-recipients/
+          url: /support/articles/tags-monitoring-recipients/
         - title: "Scheduling messages to tags"
-          url: /articles/tags-scheduling-messages/
+          url: /support/articles/tags-scheduling-messages/
         - title: "Adding notes to the Tag Record"
-          url: /articles/tags-adding-notes/
+          url: /support/articles/tags-adding-notes/
 
   - title: The TextUp Record
     description: "Start building a record of communication in TextUp"
     children:
       - title: "Text messages"
-        url: /articles/record-text-messages/
+        url: /support/articles/record-text-messages/
       - title: "Phone calls"
-        url: /articles/record-phone-calls/
+        url: /support/articles/record-phone-calls/
       - title: "Scheduling messages"
-        url: /articles/record-scheduling-messages/
+        url: /support/articles/record-scheduling-messages/
       - title: "Case notes"
-        url: /articles/record-case-notes/
+        url: /support/articles/record-case-notes/
       - title: "Sharing"
-        url: /articles/record-sharing/
+        url: /support/articles/record-sharing/
 
   - title: Teams
     description: "Work as a team with colleagues using TextUp"
     children:
       - title: "How team phones work"
-        url: /articles/teams-introduction/
+        url: /support/articles/teams-introduction/
       - title: "How to create a team phone"
-        url: /articles/teams-creating/
+        url: /support/articles/teams-creating/
       - title: "How to access your team phone"
-        url: /articles/teams-accessing/
+        url: /support/articles/teams-accessing/
       - title: "Team phones & availability"
-        url: /articles/teams-availability/
+        url: /support/articles/teams-availability/
       - title: "Team phone record keeping"
-        url: /articles/teams-record-keeping/
+        url: /support/articles/teams-record-keeping/
       - title: "Removing a team phone"
-        url: /articles/teams-removing/
+        url: /support/articles/teams-removing/
 
   - title: Security
     description: "Keep your data secure using TextUp"
     children:
       - title: "Resetting password"
-        url: /articles/security-resetting-password/
+        url: /support/articles/security-resetting-password/
       - title: "Lock code"
-        url: /articles/security-lock-code/
+        url: /support/articles/security-lock-code/
 
   - title: Admin
     description: "Manage people in your agency with TextUp"
     children:
       - title: "Accessing the admin dashboard"
-        url: /articles/admin-accessing/
+        url: /support/articles/admin-accessing/
       - title: "Approving or rejecting staff accounts"
-        url: /articles/admin-pending-staff/
+        url: /support/articles/admin-pending-staff/
       - title: "Inviting staff to create TextUp accounts"
-        url: /articles/admin-inviting-staff/
+        url: /support/articles/admin-inviting-staff/
       - title: "Assigning TextUp phone numbers to staff"
-        url: /articles/admin-assigning-numbers/
+        url: /support/articles/admin-assigning-numbers/
       - title: "Changing a TextUp phone number"
-        url: /articles/admin-changing-numbers/
+        url: /support/articles/admin-changing-numbers/
       - title: "Giving and revoking administrator access"
-        url: /articles/admin-administrators/
+        url: /support/articles/admin-administrators/
       - title: "Changing staff passwords and access"
-        url: /articles/admin-staff-passwords/
+        url: /support/articles/admin-staff-passwords/
       - title: "Transferring TextUp phone numbers"
-        url: /articles/admin-transferring-numbers/
+        url: /support/articles/admin-transferring-numbers/
       - title: "Editing staff availability"
-        url: /articles/admin-staff-availability/
+        url: /support/articles/admin-staff-availability/
       - title: "Deactivating TextUp phone numbers"
-        url: /articles/admin-deactivating-numbers/
+        url: /support/articles/admin-deactivating-numbers/
       - title: "Deactivating staff accounts"
-        url: /articles/admin-deactivating-staff-accounts/
+        url: /support/articles/admin-deactivating-staff-accounts/
       - title: "Reactivating staff accounts"
-        url: /articles/admin-reactivating-staff-accounts/
+        url: /support/articles/admin-reactivating-staff-accounts/
       - title: "Creating teams and team phones"
-        url: /articles/admin-creating-teams/
+        url: /support/articles/admin-creating-teams/
       - title: "Adding and removing staff members from a team"
-        url: /articles/admin-team-membership/
+        url: /support/articles/admin-team-membership/
       - title: "Editing teams and team phones"
-        url: /articles/admin-editing-teams/
+        url: /support/articles/admin-editing-teams/
 
   - title: Migration
     description: "Switching to TextUp from another service?"
     children:
       - title: "From Google Voice"
-        url: /articles/migration-google-voice/
+        url: /support/articles/migration-google-voice/

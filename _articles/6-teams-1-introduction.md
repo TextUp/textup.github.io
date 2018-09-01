@@ -1,6 +1,6 @@
 ---
 title: "How team phones work"
-permalink: /articles/teams-introduction/
+permalink: /support/articles/teams-introduction/
 toc: false
 ---
 

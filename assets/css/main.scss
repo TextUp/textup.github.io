@@ -4,10 +4,21 @@
 
 @charset "utf-8";
 
+$right-sidebar-width-narrow: 300px;
+$right-sidebar-width: 350px;
+$right-sidebar-width-wide: 400px;
+$global-transition: all 0.05s ease-in-out;
+$intro-transition: intro 0.1s both;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Custom
+// Core TextUp styles
+@import "core/main";
+
+// Custom styles
 @import "vars";
 @import "partials/overrides";
 @import "partials/custom";
+@import "partials/structure";
+@import "partials/sprites";

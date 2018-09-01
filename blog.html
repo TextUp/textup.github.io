@@ -1,0 +1,30 @@
+---
+layout: default
+title: "News and Updates"
+---
+
+<article class="bg-color bg-brand-dark pad-all-double text-center">
+    <div class="xs-full-row m-6-row-10 margin-center">
+        <p class="text-biggest text-bold">
+            News and Updates
+        </p>
+        <p class="margin-t">
+            The latest features and enhancements added to TextUp. Visit the <a href="https://textup.featureupvote.com" class="text-bold text-white" target="_blank" rel="noopener noreferrer">TextUp feature voting page</a> to share your thoughts on how to make TextUp better.
+        </p>
+    </div>
+</article>
+
+<div class="t-body">
+    {% assign postsByMonth = site.posts | group_by_exp: 'post', 'post.date | date: "%b %Y"' %}
+    {% for month in postsByMonth %}
+      <section id="{{ month.name }}" class="taxonomy__section">
+        <h2 class="archive__subtitle">{{ month.name }}</h2>
+        <div class="entries-{{ page.entries_layout | default: 'list' }}">
+          {% for post in month.items %}
+            {% include archive-single.html type=page.entries_layout %}
+          {% endfor %}
+        </div>
+        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+      </section>
+    {% endfor %}
+</div>

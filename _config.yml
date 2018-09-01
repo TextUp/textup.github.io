@@ -1,10 +1,9 @@
 remote_theme: "mmistakes/minimal-mistakes"
 
-title: "TextUp Support"
+title: "TextUp"
 title_separator: "|"
-name: "TextUp"
-description: "Support and help center for the TextUp case management and documentation platform."
-url: "https://support.textup.org"
+description: "TextUp provides mobile communication and collaboration for social services"
+url: "https://www.textup.org"
 repository: "TextUp/textup.github.io"
 search: true
 github: [metadata]
@@ -38,4 +37,14 @@ defaults:
       toc_label: "In this article"
       sidebar:
         nav: "articles"
-
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      author: TextUp
+      read_time: true
+      comments: false
+      share: false
+      related: false

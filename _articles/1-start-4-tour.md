@@ -1,6 +1,6 @@
 ---
 title: "Interface tour"
-permalink: /articles/getting-started-tour/
+permalink: /support/articles/getting-started-tour/
 excerpt: "Tour of the main components of the mobile and desktop interface and the functionality in the sidebar."
 ---
 
@@ -8,7 +8,7 @@ Now that you are all set up with your new TextUp account, take a quick moment to
 
 ## Mobile interface
 
-![Mobile contact list]({{ site.baseurl }}/assets/images/tour-mobile-contact-list.png){: .align-right} This contacts list page is the main page of the mobile interface. Selecting any of the contacts will take you to the record of communication for that contact.
+![Mobile contact list]({{ site.baseurl }}/assets/images/support/tour-mobile-contact-list.png){: .align-right} This contacts list page is the main page of the mobile interface. Selecting any of the contacts will take you to the record of communication for that contact.
 
 Select the search icon in the upper right to search for a contact by name or phone number.
 
@@ -16,7 +16,7 @@ Select the circular icon in the upper left to open up the side menu. This menu i
 
 {% include step-separator.md %}
 
-![Mobile side menu]({{ site.baseurl }}/assets/images/tour-mobile-side-menu.png){: .align-right} From the top of the mobile side menu downwards:
+![Mobile side menu]({{ site.baseurl }}/assets/images/support/tour-mobile-side-menu.png){: .align-right} From the top of the mobile side menu downwards:
 1. **Account switcher and settings** Open the account switcher to switch between all the TextUp phone numbers you have access to or to log out. Select the gear icon to access settings.
 1. **Availability** Configure when you are available to receive notifications. When you are not available, the away message and voice type TextUp will use to respond to incoming texts or calls can also be configured here.
 1. **Compose** Send texts to any combination of contacts, tags (groups of contacts), and individual phone numbers.
@@ -33,7 +33,7 @@ Select the circular icon in the upper left to open up the side menu. This menu i
 
 ## Desktop interface
 
-![Desktop start page]({{ site.baseurl }}/assets/images/tour-desktop.png){: .align-center}
+![Desktop start page]({{ site.baseurl }}/assets/images/support/tour-desktop.png){: .align-center}
 
 The desktop interface is very similar in structure to the mobile interface. Moving from left to right:
 1. **Side bar** The side bar has similar controls as the mobile side menu. Note that search is now in the desktop side bar.
