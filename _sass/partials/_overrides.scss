@@ -1,5 +1,9 @@
 #main {
     padding: 0;
+
+    @include breakpoint($x-large) {
+        max-width: 100%;
+    }
 }
 
 .masthead {
