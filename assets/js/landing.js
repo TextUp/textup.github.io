@@ -16,4 +16,10 @@ $(document).ready(function() {
     }
     $("#" + slickId).slick("slickGoTo", slideIndex);
   });
+
+  $("#textup-landing-contact-form").on("submit", function() {
+    $(this).fadeOut(function() {
+      $("#textup-landing-form-submit").toggleClass("hidden");
+    });
+  });
 });

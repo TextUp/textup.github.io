@@ -68,7 +68,8 @@ html {
             }
         }
         @include breakpoint($x-large) {
-            &--left, &--right {
+            &--left,
+            &--right {
                 margin: 0;
             }
         }
@@ -268,7 +269,14 @@ html {
     font-family: inherit;
 
     &--light {
-        color: $color-white;
+        &,
+        &:link,
+        &:visited,
+        &:focus,
+        &:hover,
+        &:active {
+            color: $color-white;
+        }
     }
     &--link {
         &,
@@ -440,6 +448,13 @@ html {
 .container {
     display: flex;
 
+    &--xs-wrap { // TODO
+        flex-wrap: wrap;
+
+        @include breakpoint($medium) {
+            flex-wrap: nowrap;
+        }
+    }
     &--reverse {
         flex-direction: row-reverse;
     }

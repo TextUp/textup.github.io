@@ -3,27 +3,29 @@ layout: default
 ---
 
 <main>
-    <article class="landing hero">
-        <section class="landing__container">
-            <div class="hero__content">
-                <h1 class="heading heading--light heading--h1">
-                    Designed to establish trust
-                </h1>
-                <p class="text text--light">TextUp enables social work agencies and nonprofits to foster strong client relationships built on consistent communication and reliable follow-up.</p>
-                <div class="container">
-                    <a href="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="button button--light margin-r">
-                        Request a Demo
-                    </a>
-                    <!-- <button type="button" class="button button--light">
-                        Choose a Plan
-                    </button> -->
+    <article class="landing">
+        <div class="hero">
+            <section class="landing__container">
+                <div class="hero__content">
+                    <h1 class="heading heading--light heading--h1">
+                        Designed to establish trust
+                    </h1>
+                    <p class="text text--light">TextUp enables social work agencies and nonprofits to foster strong client relationships built on consistent communication and reliable follow-up.</p>
+                    <div class="container">
+                        <a href="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
+                            target="_top"
+                            rel="noopener noreferrer"
+                            class="button button--light margin-r">
+                            Request a Demo
+                        </a>
+                        <!-- <button type="button" class="button button--light">
+                            Choose a Plan
+                        </button> -->
+                    </div>
                 </div>
-            </div>
-            <img src="{{site.baseurl}}/assets/images/landing/hero.png" alt="laptop showing TextUp login page" class="hero__image image">
-        </section>
+                <img src="{{site.baseurl}}/assets/images/landing/hero.png" alt="laptop showing TextUp login page" class="hero__image image">
+            </section>
+        </div>
     </article>
     <article class="landing">
         <div class="landing__container">
@@ -31,7 +33,7 @@ layout: default
                 <span class="heading__subtitle">streamlined and secure</span>
                 What is <span class="heading__emphasis">TextUp</span>
             </h2>
-            <section class="text landing__content">
+            <section class="landing__content">
                 <div class="container container--spread margin-b-double">
                     <img src="{{ site.baseurl }}/assets/images/landing/illustration-home.png" alt="Illustration showing a home" class="image">
                     <img src="{{ site.baseurl }}/assets/images/landing/illustration-people.png" alt="Illustration showing a person" class="image">
@@ -400,7 +402,7 @@ layout: default
                 <span class="heading__subtitle">we would love to hear from you</span>
                 Contact <span class="heading__emphasis">us</span>
             </h2>
-            <form action="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
+            <!-- <form action="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
                 class="landing__content form">
                 <label for="textup-landing-contact-message" class="sr-only">Your message</label>
                 <textarea id="textup-landing-contact-message"
@@ -412,7 +414,66 @@ layout: default
                 <div class="text-center">
                     <button type="submit" class="button button--light">Send</button>
                 </div>
+            </form> -->
+
+            <div id="textup-landing-form-submit" class="landing__content hidden pad-b-double">
+                <h3 class="heading heading--h3 heading--center heading--light heading--no-transform">
+                    Thanks for getting in touch!
+                    <br>
+                    You'll hear back from us soon.
+                </h3>
+            </div>
+            <iframe name="hidden-iframe" id="hidden-iframe" class='hidden'></iframe>
+            <form id="textup-landing-contact-form"
+                action="https://docs.google.com/forms/d/e/1FAIpQLScy3LR7LoQ6Z70LnABhCW6-55VsUxxGcCfeay8I6gDoZhyTFQ/formResponse"
+                target="hidden-iframe"
+                method="POST"
+                class="landing__content form">
+                <div class="container container--xs-wrap container--at-ends">
+                    <div class="xs-full-row m-row-2">
+                        <label for="textup-landing-contact-name" class="sr-only">Your name</label>
+                        <input id="textup-landing-contact-name"
+                            class="form__item"
+                            type="text"
+                            name="entry.1461554307"
+                            placeholder="Your name">
+                    </div>
+                    <div class="margin-l display-m display-l"></div>
+                    <div class="xs-full-row m-row-2">
+                        <label for="textup-landing-contact-email" class="sr-only">Your email</label>
+                        <input id="textup-landing-contact-email"
+                            class="form__item"
+                            type="email"
+                            autocomplete="email"
+                            name="emailAddress"
+                            required=""
+                            placeholder="Your email">
+                    </div>
+                </div>
+                <label for="textup-landing-contact-message" class="sr-only">Your message</label>
+                <textarea id="textup-landing-contact-message"
+                    name="entry.1452789925"
+                    type="text"
+                    class="form__item"
+                    rows="5"
+                    placeholder="Your message here..."></textarea>
+
+                <input type="hidden" name="fvv" value="1">
+                <input type="hidden" name="draftResponse" value="[null,null,&quot;-973679672042260180&quot;]">
+                <input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="-973679672042260180">
+
+                <div class="text-center">
+                    <button type="submit" class="button button--light">Send</button>
+                </div>
             </form>
+            <div class="text-center">
+                <a href="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
+                    target="_top"
+                    rel="noopener noreferrer"
+                    class="text text--light text--center">
+                    Or email us directly at connect@textup.org
+                </a>
+            </div>
         </div>
     </article>
 </main>
