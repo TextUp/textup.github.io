@@ -1,7 +1,14 @@
 // colors
-$brand-color: #3399cc;
+$brand-color: #2898d9;
 $danger-color: #c9302c;
 $success-color: #56a556;
+
+$color-brand: $brand-color;
+$color-brand-hover: tint($brand-color);
+
+$color-white: #ffffff;
+$color-light-seafoam: #f5f8f8;
+$color-seafoam: #e3eeef;
 
 // elements
 $bg-dark-color: #222222;
@@ -15,32 +22,23 @@ $outgoing-color: $brand-color;
 // font
 $font-size: 14px;
 $title-color: #505050;
-$font-color: #737373;
+$font-color: #595859;
 $font-light-color: #fff;
 $font-weight-std: 400;
 $font-weight-bold: 700;
 
 // measurements
+$baseunit: 1rem;
+$spacing: $baseunit;
 $border-radius: 3px;
-$spacing-scaling: (
-	1: 'default',
-	0.5: 'half',
-    0.25: 'quarter',
-	2: 'double',
-    3: 'triple',
-    4: '4x'
-);
-$directions-with-abbr: (
-    left: 'l',
-    right: 'r',
-    top: 't',
-    bottom: 'b'
-);
+$border-width: 1px;
+$spacing-scaling: (1: "default", 0.5: "half", 0.25: "quarter", 2: "double", 3: "triple", 4: "4x");
+$directions-with-abbr: (left: "l", right: "r", top: "t", bottom: "b");
 $corners-with-abbr: (
-    'top-left': 'tl',
-    'top-right': 'tr',
-    'bottom-left': 'bl',
-    'bottom-right': 'br'
+    "top-left": "tl",
+    "top-right": "tr",
+    "bottom-left": "bl",
+    "bottom-right": "br"
 );
 $padding: 1em;
 $button-accent-size: 3px;
@@ -72,17 +70,7 @@ $slideout-z-index: 50;
 
 // grid
 $grid-splits: 2, 3, 10, 20;
-$breakpoint-abbrs: ( // must be from smallest to largest
-	mobile: "xs",
-	mobileLandscape: "s",
-    tablet: "m",
-    desktop: "l"
-);
+$breakpoint-abbrs: (mobile: "xs", mobileLandscape: "s", tablet: "m", desktop: "l");
 
 // mq configuration
-$mq-breakpoints: (
-    mobile: 320px,
-    mobileLandscape: 480px,
-    tablet: 740px,
-    desktop: 980px
-);
+$mq-breakpoints: (mobile: 320px, mobileLandscape: 480px, tablet: 740px, desktop: 980px);

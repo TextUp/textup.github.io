@@ -22,3 +22,12 @@ $intro-transition: intro 0.1s both;
 @import "partials/custom";
 @import "partials/structure";
 @import "partials/sprites";
+
+$slick-font-path: "../fonts/";
+$slick-loader-path: "../images/vendor/";
+$slick-arrow-color: $color-brand;
+$slick-dot-color: $color-brand;
+$slick-dot-color-active: shade($color-brand);
+
+@import "vendor/slick.scss";
+@import "vendor/slick-theme.scss";

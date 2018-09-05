@@ -7,9 +7,9 @@
 }
 
 .masthead {
-    border-bottom: 5px solid $brand-color;
+    border-bottom: 5px solid $color-brand;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
-    background-color: #f5f8f8;
+    background-color: $color-light-seafoam;
 
     &--home {
         position: sticky;
@@ -24,10 +24,11 @@
 }
 
 .greedy-nav {
-    background-color: #f5f8f8;
+    padding: $baseunit 0;
+    background-color: $color-light-seafoam;
 
     .site-title {
-        height: 60%;
+        height: 45px;
 
         img {
             height: 100%;
