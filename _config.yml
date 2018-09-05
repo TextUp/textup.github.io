@@ -13,7 +13,7 @@ footer_scripts:
   - assets/js/plugins/jquery.greedy-navigation.js
   - assets/js/plugins/jquery.magnific-popup.js
   - assets/js/plugins/jquery.smooth-scroll.min.js
-  - assets/js/vendor/slick.min.js
+  - assets/js/slick.min.js
   - assets/js/_main.js
   - assets/js/landing.js
 
