@@ -3,23 +3,26 @@ layout: default
 title: "Support Center"
 ---
 
-<article class="bg-color bg-brand-dark pad-all-double text-center">
-    <div class="xs-full-row m-6-row-10 margin-center">
-        <p class="text-biggest text-bold">
+<article class="landing landing--bg-dark">
+    <div class="landing__container">
+        <h2 class="heading heading--h2 heading--center heading--light">
+            <span class="heading__subtitle">We're here to help</span>
             Support Center
-        </p>
-        <p class="margin-t">
-            Still have questions? Contact us at
-            <a href="mailto:connect@textup.org?Subject=Support%20Question%20From%20Website"
-                target="_top"
-                class="text-bold text-white">
-                connect@textup.org
-            </a>
-        </p>
+        </h2>
+        <div class="landing__content">
+            <p class="margin-t text text--light">
+                Still have questions? Contact us at
+                <a href="mailto:connect@textup.org?Subject=Support%20Question%20From%20Website"
+                    target="_top"
+                    class="text text--light">
+                    connect@textup.org
+                </a>
+            </p>
+        </div>
     </div>
 </article>
-<div class="t-body">
-    <div class="t-grid t-grid--align-stretch">
+<div class="landing">
+    <div class="landing__container t-grid">
         {% for section in site.data.navigation.articles %}
             <div class="t-help-section t-grid__item t-padding--all-half">
                 <div class="t-help-section__content t-padding--all t-height--full">
