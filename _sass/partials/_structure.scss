@@ -20,12 +20,18 @@ html {
 
     width: 100%;
     background-color: $color-white;
+    overflow: hidden;
 
-    &--bg-dark {
-        background-color: $color-brand;
-    }
-    &--bg-light {
-        background-color: $color-light-seafoam;
+    &--bg {
+        &-dark {
+            background-color: $color-brand;
+        }
+        &-medium {
+            background-color: $color-seafoam;
+        }
+        &-light {
+            background-color: $color-light-seafoam;
+        }
     }
     &__container {
         max-width: 90%;
@@ -42,9 +48,6 @@ html {
         max-width: 100%;
         margin: 0 auto;
 
-        &--bg-light {
-            background-color: $color-white;
-        }
         &--left,
         &--right {
             width: 100%;
@@ -81,11 +84,7 @@ html {
         height: $value-prop-height;
         margin: ($baseunit * 4) 0;
 
-        // TODO improve
-        display: none;
         @include breakpoint($medium) {
-            display: block;
-
             &--right {
                 transform: translateX(40%);
             }
@@ -187,7 +186,6 @@ html {
         width: 100%;
         transform: translateX(-50%);
         z-index: 10;
-        display: block !important; // TODO
 
         @include breakpoint($medium) {
             top: auto;
@@ -205,9 +203,11 @@ html {
     &--with-shadow {
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
     }
+}
 
-    // TODO improve
+.hide--mobile {
     display: none;
+
     @include breakpoint($medium) {
         display: block;
     }
@@ -233,7 +233,7 @@ html {
     }
     &--h4 {
         margin-bottom: $baseunit;
-        font-size: $baseunit * 1.2;
+        font-size: $baseunit * 1.3;
     }
     &--center {
         text-align: center;
@@ -244,29 +244,37 @@ html {
     &--light {
         color: $color-white;
 
+        .heading--color-brand {
+            color: $color-white;
+        }
         .heading__subtitle {
             color: $color-white;
         }
-        .heading__emphasis {
-            color: $color-white;
-        }
+    }
+    &--color-brand {
+        color: $color-brand;
     }
     &__subtitle {
         display: block;
         color: tint($font-color);
         font-size: $baseunit;
     }
-    &__emphasis {
-        color: $color-brand;
-    }
 }
 
 .text {
     margin-bottom: $baseunit;
-    color: $font-color;
     font-size: $baseunit;
     font-weight: $font-weight-std;
     font-family: inherit;
+
+    &,
+    &:link,
+    &:visited,
+    &:focus,
+    &:hover,
+    &:active {
+        color: $font-color;
+    }
 
     &--light {
         &,
@@ -282,7 +290,6 @@ html {
         &,
         &:link,
         &:visited {
-            text-transform: uppercase;
             color: $color-brand;
         }
         &:focus,
@@ -291,9 +298,25 @@ html {
             color: shade($color-brand);
         }
     }
-    &__emphasized {
-        color: $color-brand;
-        font-size: $baseunit * 1.2;
+    &--emphasize {
+        font-weight: $font-weight-bold;
+    }
+    &--uppercase {
+        text-transform: uppercase;
+    }
+    &--large {
+        font-size: $baseunit * 2;
+        font-weight: 300;
+    }
+    &--color-brand {
+        &,
+        &:link,
+        &:visited,
+        &:focus,
+        &:hover,
+        &:active {
+            color: $color-brand;
+        }
     }
 }
 
@@ -346,24 +369,7 @@ html {
     }
 }
 
-// TODO
-.landing {
-    overflow: hidden;
-}
-.landing-values-controls {
-    margin-top: $baseunit * 2;
-}
-@include breakpoint($medium) {
-    .landing {
-        overflow: visible;
-    }
-    .landing-values-controls {
-        margin-top: 0;
-        transform: translateY(-50%);
-    }
-}
-
-.landing-values-controls {
+.input-group-carousel-controls {
     display: flex;
     justify-content: center;
 
@@ -388,13 +394,16 @@ html {
             display: none;
         }
         label {
-            min-width: $baseunit * 10;
+            min-width: $baseunit * 8;
             line-height: $control-height;
             margin: 0;
             background-color: $color-white;
             color: $color-brand;
             transition: all 0.2s;
 
+            @include breakpoint($medium) {
+                min-width: $baseunit * 10;
+            }
             &:hover,
             &:focus {
                 background-color: $color-seafoam;
@@ -408,6 +417,156 @@ html {
             &:focus {
                 background-color: shade($color-brand);
             }
+        }
+    }
+}
+
+.image-carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: $baseunit * 3;
+
+    @include breakpoint($medium) {
+        flex-wrap: nowrap;
+        margin-bottom: $baseunit * 4;
+    }
+    &__item {
+        width: 50%;
+        margin-bottom: $baseunit;
+
+        @include breakpoint($medium) {
+            width: auto;
+            padding: 0 $baseunit;
+            margin-bottom: 0;
+        }
+        @include breakpoint($large) {
+            width: auto;
+            padding: 0 ($baseunit * 3);
+        }
+        input {
+            display: none;
+        }
+        label {
+            padding: $baseunit / 2;
+            background-color: transparent;
+            transition: transparent 0.5s;
+            cursor: pointer;
+            opacity: 0.8;
+
+            @include breakpoint($medium) {
+                width: auto;
+                padding: $baseunit;
+            }
+        }
+        input:checked + label {
+            background-color: $color-seafoam;
+            opacity: 1;
+        }
+    }
+}
+
+.plan {
+    padding: $baseunit * 2;
+    background-color: $color-white;
+
+    & + & {
+        margin-top: $baseunit * 2;
+    }
+    &__title {
+        @extend .heading;
+        @extend .heading--h3;
+        @extend .heading--no-transform;
+
+        color: $color-brand;
+        font-weight: $font-weight-bold;
+        text-align: center;
+    }
+    &__description {
+        @extend .text;
+
+        text-align: center;
+        margin-bottom: $baseunit * 1.5;
+    }
+    &__options {
+        margin-bottom: $baseunit * 2;
+    }
+    &__details-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        @include breakpoint($medium) {
+            flex-wrap: nowrap;
+        }
+    }
+    &__detail-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        & + & {
+            padding-top: $baseunit;
+            border-top: 1px solid $border-color;
+        }
+        @include breakpoint($medium) {
+            min-width: 20%;
+            width: auto;
+
+            & + & {
+                padding-top: 0;
+                border-top-width: 0;
+            }
+        }
+    }
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include breakpoint($medium) {
+        flex-wrap: nowrap;
+    }
+    &__member {
+        & + & {
+            margin-top: $baseunit * 3;
+        }
+        @include breakpoint($medium) {
+            padding: 0 ($baseunit * 2);
+
+            & + & {
+                margin-top: 0;
+            }
+        }
+    }
+    &__headshot {
+        position: relative;
+        margin-bottom: $baseunit;
+        cursor: pointer;
+
+        &--show-details &__overlay {
+            opacity: 1;
+        }
+        &__overlay {
+            @extend .text;
+            @extend .text--light;
+            @extend .text--emphasize;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            padding: $baseunit;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow-x: hidden;
+            overflow-y: auto;
+            opacity: 0;
+            transition: opacity 0.5s;
         }
     }
 }
@@ -436,6 +595,84 @@ html {
     }
 }
 
+.page__footer {
+    border-top: 2px solid $border-color;
+    background-color: $color-light-seafoam;
+
+    footer {
+        padding: 0;
+        margin: 0;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: ($baseunit * 2) 0;
+    overflow: hidden;
+
+    @include breakpoint($medium) {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: ($baseunit * 2) $baseunit;
+    }
+    @include breakpoint($large) {
+        padding: ($baseunit * 2) 0;
+    }
+    &__logo {
+        height: $baseunit * 3;
+        margin-bottom: $baseunit * 2;
+
+        @include breakpoint($medium) {
+            height: $baseunit * 4;
+            margin-bottom: 0;
+        }
+    }
+    &__body {
+        text-align: left;
+
+        @include breakpoint($medium) {
+            text-align: right;
+        }
+    }
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: $baseunit;
+        padding: 0;
+        list-style: none;
+
+        @include breakpoint($medium) {
+            flex-wrap: nowrap;
+            flex-direction: row;
+
+            $footer-links-spacing: $baseunit * 2;
+            li + li {
+                position: relative;
+                margin-left: $footer-links-spacing;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: $footer-links-spacing * -1 / 2;
+                    transform: translate(-50%, -50%);
+                    height: 3px;
+                    width: 3px;
+                    background-color: $font-color;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+    &__attribution-image {
+        height: $baseunit * 1.4;
+        margin-left: $baseunit * 0.3;
+    }
+}
+
 // TODO defer to the core styles implementation in the core styles once that is updated
 
 // from https://webaim.org/techniques/css/invisiblecontent/
@@ -448,7 +685,7 @@ html {
 .container {
     display: flex;
 
-    &--xs-wrap { // TODO
+    &--xs-wrap {
         flex-wrap: wrap;
 
         @include breakpoint($medium) {

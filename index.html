@@ -18,9 +18,10 @@ layout: default
                             class="button button--light margin-r">
                             Request a Demo
                         </a>
-                        <!-- <button type="button" class="button button--light">
+                        <a href="#landing-pricing-section"
+                            class="button button--light">
                             Choose a Plan
-                        </button> -->
+                        </a>
                     </div>
                 </div>
                 <img src="{{site.baseurl}}/assets/images/landing/hero.png" alt="laptop showing TextUp login page" class="hero__image image">
@@ -31,13 +32,15 @@ layout: default
         <div class="landing__container">
             <h2 class="heading heading--h2 heading--center">
                 <span class="heading__subtitle">streamlined and secure</span>
-                What is <span class="heading__emphasis">TextUp</span>
+                What is <span class="heading--color-brand">TextUp</span>
             </h2>
             <section class="landing__content">
-                <div class="container container--spread margin-b-double">
-                    <img src="{{ site.baseurl }}/assets/images/landing/illustration-home.png" alt="Illustration showing a home" class="image">
-                    <img src="{{ site.baseurl }}/assets/images/landing/illustration-people.png" alt="Illustration showing a person" class="image">
-                    <img src="{{ site.baseurl }}/assets/images/landing/illustration-relationship.png" alt="Illustration showing a handshake" class="image">
+                <div class="hide--mobile">
+                    <div class="container container--spread margin-b-double">
+                        <img src="{{ site.baseurl }}/assets/images/landing/illustration-home.png" alt="Illustration showing a home" class="image">
+                        <img src="{{ site.baseurl }}/assets/images/landing/illustration-people.png" alt="Illustration showing a person" class="image">
+                        <img src="{{ site.baseurl }}/assets/images/landing/illustration-relationship.png" alt="Illustration showing a handshake" class="image">
+                    </div>
                 </div>
                 <p class="text">
                     Technically speaking, TextUp combines a cloud-based phone system with a CRM platform tailored to the needs of social workers and care providers. Our users can access a HIPAA- and FERPA-compliant work phone number from any of their personal devices. While clients communicate with this TextUp work phone number the same way they do with any other phone number, staff have access to the entire TextUp suite of features.
@@ -49,119 +52,125 @@ layout: default
         </div>
     </article>
     <article class="landing landing--bg-light">
-        <div class="landing-values-controls">
-            <div class="landing-values-controls__item">
-                <input id="slick-values-carousel-admin"
-                    type="radio"
-                    checked
-                    data-controls-slick="slick-values-carousel"
-                    data-slick-slide="0">
-                <label for="slick-values-carousel-admin">
-                    For admins
-                </label>
+        <div class="landing__container">
+            <h2 class="heading heading--h2 heading--center">
+                <span class="heading__subtitle">how we help</span>
+                Our <span class="heading--color-brand">value</span>
+            </h2>
+            <div class="input-group-carousel-controls">
+                <div class="input-group-carousel-controls__item">
+                    <input id="slick-values-carousel-admin"
+                        type="radio"
+                        checked
+                        data-controls-slick="slick-values-carousel"
+                        data-slick-slide="0">
+                    <label for="slick-values-carousel-admin">
+                        Admins
+                    </label>
+                </div>
+                <div class="input-group-carousel-controls__item">
+                    <input id="slick-values-carousel-staff"
+                        type="radio"
+                        data-controls-slick="slick-values-carousel"
+                        data-slick-slide="1">
+                    <label for="slick-values-carousel-staff">
+                        Staff
+                    </label>
+                </div>
             </div>
-            <div class="landing-values-controls__item">
-                <input id="slick-values-carousel-staff"
-                    type="radio"
-                    data-controls-slick="slick-values-carousel"
-                    data-slick-slide="1">
-                <label for="slick-values-carousel-staff">
-                    For staff
-                </label>
-            </div>
-        </div>
-        <div id="slick-values-carousel"
-            class="will-call-slick landing__container"
-            data-slick='{ "adaptiveHeight": true, "arrows": false, "draggable": false }'>
-            <div>
-                <h2 class="sr-only">TextUp's benefits for administrators</h2>
-                <section class="container container--at-ends">
-                    <div class="landing__content landing__content--left">
-                        <h3 class="heading heading--h2">
-                            <span class="heading__subtitle">our product</span>
-                            Supports Legal <span class="heading__emphasis">Compliance</span>
-                        </h3>
-                        <p class="text">
-                            Reduce your risk of lawsuits with fully encrypted, HIPAA- and FERPA-compliant texting and calling. Texting and calling are the most effective ways to reach clients, but few platforms meet federal standards for data security. Easily reach your clients without compromising security.
-                        </p>
-                    </div>
-                    <div class="landing__image-container landing__image-container--right">
-                        <img src="{{ site.baseurl }}/assets/images/landing/admin-compliance.gif" alt="" class="image image--with-shadow landing__image-container__image">
-                    </div>
-                </section>
-                <section class="container container--at-ends container--reverse">
-                    <div class="landing__content landing__content--right">
-                        <h3 class="heading heading--h2">
-                            <span class="heading__subtitle">our product</span>
-                            Cuts <span class="heading__emphasis">Costs</span>
-                        </h3>
-                        <p class="text">
-                            Spend less money on phone lines. Because TextUp phone numbers can be accessed via the internet on any device, you don’t need to pay for physical work phones or costly hardware repairs or upgrades. TextUp offers both monthly subscription and pay-as-you-go plans designed for affordability.
-                        </p>
-                    </div>
-                    <div class="landing__image-container landing__image-container--left">
-                        <img src="{{ site.baseurl }}/assets/images/landing/admin-costs.gif" alt="" class="image image--with-shadow landing__image-container__image">
-                    </div>
-                </section>
-                <section class="container container--at-ends">
-                    <div class="landing__content landing__content--left">
-                        <h3 class="heading heading--h2">
-                            <span class="heading__subtitle">our product</span>
-                            Ensures <span class="heading__emphasis">continuity</span> of care and record-keeping
-                        </h3>
-                        <p class="text">
-                            Have high staff turnover? Never lose clients records or interrupt client care again. Any TextUp record or phone number can be transferred by an administrator. That means when a staff member leaves your organization, you don’t lose their work phone number or their client communication records.
-                        </p>
-                    </div>
-                    <div class="landing__image-container landing__image-container--right">
-                        <img src="{{ site.baseurl }}/assets/images/landing/admin-continuity.gif" alt="" class="image image--with-shadow landing__image-container__image">
-                    </div>
-                </section>
-            </div>
-            <div>
-                <h2 class="sr-only">TextUp's benefits for staff members</h2>
-                <section class="container container--at-ends">
-                    <div class="landing__content landing__content--left">
-                        <h3 class="heading heading--h2">
-                            <span class="heading__subtitle">our product</span>
-                            fosters <span class="heading__emphasis">work-personal life</span> separation
-                        </h3>
-                        <p class="text">
-                            Give clients the consistent support they need, without sacrificing your well-being. TextUp provides users with work phone numbers, meaning you can text and call with clients without giving out your personal phone number. When you’re off-hours, incoming texts receive an automatic away message in response and calls can be directed to an alternate phone line.
-                        </p>
-                    </div>
-                    <div class="landing__image-container landing__image-container--right">
-                        <img src="{{ site.baseurl }}/assets/images/landing/staff-personal.gif" alt="" class="image image--with-shadow landing__image-container__image">
-                    </div>
-                </section>
-                <section class="container container--at-ends container--reverse">
-                    <div class="landing__content landing__content--right">
-                        <h3 class="heading heading--h2">
-                            <span class="heading__subtitle">our product</span>
-                            saves <span class="heading__emphasis">time</span>
-                        </h3>
-                        <p class="text">
-                            Reduce the time you spend on administrative tasks. TextUp automatically documents your calls and texts with clients. Our users can schedule messages to send to clients in the future -- on a one-time or recurring basis -- and, with one click, send a message to many clients.
-                        </p>
-                    </div>
-                    <div class="landing__image-container landing__image-container--left">
-                        <img src="{{ site.baseurl }}/assets/images/landing/staff-time.gif" alt="" class="image image--with-shadow landing__image-container__image">
-                    </div>
-                </section>
-                <section class="container container--at-ends">
-                    <div class="landing__content landing__content--left">
-                        <h3 class="heading heading--h2">
-                            <span class="heading__subtitle">our product</span>
-                            facilitates <span class="heading__emphasis">staff</span> collaboration
-                        </h3>
-                        <p class="text">
-                            Get more things done, more effectively by collaborating with colleagues. Share client records to keep everyone in-the-loop when multiple providers work with the same client. Give a colleague the ability to follow up with your client on your behalf while you’re out sick or on vacation. Staff can even create shared phone numbers or hotlines for different programs.
-                        </p>
-                    </div>
-                    <div class="landing__image-container landing__image-container--right">
-                        <img src="{{ site.baseurl }}/assets/images/landing/staff-collaboration.gif" alt="" class="image image--with-shadow landing__image-container__image">
-                    </div>
-                </section>
+            <div id="slick-values-carousel"
+                class="will-call-slick"
+                data-slick='{ "adaptiveHeight": true, "arrows": false, "draggable": false }'>
+                <div>
+                    <h2 class="sr-only">TextUp's benefits for administrators</h2>
+                    <section class="container container--at-ends">
+                        <div class="landing__content landing__content--left">
+                            <h3 class="heading heading--h3">
+                                <span class="heading__subtitle">our product</span>
+                                Supports Legal <span class="heading--color-brand">Compliance</span>
+                            </h3>
+                            <p class="text">
+                                Reduce your risk of lawsuits with fully encrypted, HIPAA- and FERPA-compliant texting and calling. Texting and calling are the most effective ways to reach clients, but few platforms meet federal standards for data security. Easily reach your clients without compromising security.
+                            </p>
+                        </div>
+                        <div class="hide--mobile landing__image-container landing__image-container--right">
+                            <img src="{{ site.baseurl }}/assets/images/landing/admin-compliance.gif" alt="" class="image image--with-shadow landing__image-container__image">
+                        </div>
+                    </section>
+                    <section class="container container--at-ends container--reverse">
+                        <div class="landing__content landing__content--right">
+                            <h3 class="heading heading--h3">
+                                <span class="heading__subtitle">our product</span>
+                                Cuts <span class="heading--color-brand">Costs</span>
+                            </h3>
+                            <p class="text">
+                                Spend less money on phone lines. Because TextUp phone numbers can be accessed via the internet on any device, you don’t need to pay for physical work phones or costly hardware repairs or upgrades. TextUp offers both monthly subscription and pay-as-you-go plans designed for affordability.
+                            </p>
+                        </div>
+                        <div class="hide--mobile landing__image-container landing__image-container--left">
+                            <img src="{{ site.baseurl }}/assets/images/landing/admin-costs.gif" alt="" class="image image--with-shadow landing__image-container__image">
+                        </div>
+                    </section>
+                    <section class="container container--at-ends">
+                        <div class="landing__content landing__content--left">
+                            <h3 class="heading heading--h3">
+                                <span class="heading__subtitle">our product</span>
+                                Ensures <span class="heading--color-brand">continuity</span> of care and record-keeping
+                            </h3>
+                            <p class="text">
+                                Have high staff turnover? Never lose clients records or interrupt client care again. Any TextUp record or phone number can be transferred by an administrator. That means when a staff member leaves your organization, you don’t lose their work phone number or their client communication records.
+                            </p>
+                        </div>
+                        <div class="hide--mobile landing__image-container landing__image-container--right">
+                            <img src="{{ site.baseurl }}/assets/images/landing/admin-continuity.gif" alt="" class="image image--with-shadow landing__image-container__image">
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <h2 class="sr-only">TextUp's benefits for staff members</h2>
+                    <section class="container container--at-ends">
+                        <div class="landing__content landing__content--left">
+                            <h3 class="heading heading--h3">
+                                <span class="heading__subtitle">our product</span>
+                                fosters <span class="heading--color-brand">work-personal life</span> separation
+                            </h3>
+                            <p class="text">
+                                Give clients the consistent support they need, without sacrificing your well-being. TextUp provides users with work phone numbers, meaning you can text and call with clients without giving out your personal phone number. When you’re off-hours, incoming texts receive an automatic away message in response and calls can be directed to an alternate phone line.
+                            </p>
+                        </div>
+                        <div class="hide--mobile landing__image-container landing__image-container--right">
+                            <img src="{{ site.baseurl }}/assets/images/landing/staff-personal.gif" alt="" class="image image--with-shadow landing__image-container__image">
+                        </div>
+                    </section>
+                    <section class="container container--at-ends container--reverse">
+                        <div class="landing__content landing__content--right">
+                            <h3 class="heading heading--h3">
+                                <span class="heading__subtitle">our product</span>
+                                saves <span class="heading--color-brand">time</span>
+                            </h3>
+                            <p class="text">
+                                Reduce the time you spend on administrative tasks. TextUp automatically documents your calls and texts with clients. Our users can schedule messages to send to clients in the future -- on a one-time or recurring basis -- and, with one click, send a message to many clients.
+                            </p>
+                        </div>
+                        <div class="hide--mobile landing__image-container landing__image-container--left">
+                            <img src="{{ site.baseurl }}/assets/images/landing/staff-time.gif" alt="" class="image image--with-shadow landing__image-container__image">
+                        </div>
+                    </section>
+                    <section class="container container--at-ends">
+                        <div class="landing__content landing__content--left">
+                            <h3 class="heading heading--h3">
+                                <span class="heading__subtitle">our product</span>
+                                facilitates <span class="heading--color-brand">staff</span> collaboration
+                            </h3>
+                            <p class="text">
+                                Get more things done, more effectively by collaborating with colleagues. Share client records to keep everyone in-the-loop when multiple providers work with the same client. Give a colleague the ability to follow up with your client on your behalf while you’re out sick or on vacation. Staff can even create shared phone numbers or hotlines for different programs.
+                            </p>
+                        </div>
+                        <div class="hide--mobile landing__image-container landing__image-container--right">
+                            <img src="{{ site.baseurl }}/assets/images/landing/staff-collaboration.gif" alt="" class="image image--with-shadow landing__image-container__image">
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
     </article>
@@ -173,10 +182,10 @@ layout: default
             </h2>
             <section class="landing__content">
                 <p class="text text--light">
-                    Our customers serve as advocates and advisors to those who otherwise lack support. But despite the critical importance of their work, many social work agencies are underfunded and short-staffed, creating a high stress work environment. According to the American Public Health Association, the average social worker has 25 clients at once. Only 18% of their time is spent on direct client service and the rest of their time is spent tracking clients down, documenting, reporting, etc. Because of the high stress and administration burden, studies have revealed annual turnover of 41% to 51% among U.S. social workers.
+                    Our customers serve as advocates and advisors to those who otherwise lack support. But despite the critical importance of their work, many social work agencies are underfunded and short-staffed, creating a high stress work environment. According to the American Public Health Association, the average social worker has <span class="text--emphasize">25 clients at once. Only 18% of their time is spent on direct client service</span> and the rest of their time is spent tracking clients down, documenting, reporting, etc. Because of the high stress and administration burden, studies have revealed <span class="text--emphasize">annual turnover of 41% to 51%</span> among U.S. social workers.
                 </p>
                 <p class="text text--light">
-                    TextUp provides the capacity-building, time saving, stress-reducing tools that social workers need to be successful at a price point their employers can afford. And when social workers are effective and happy, their clients recieve a higher quality of care.
+                    TextUp provides the <span class="text--emphasize">capacity-building</span>, <span class="text--emphasize">time saving</span>, <span class="text--emphasize">stress-reducing</span> tools that social workers need to be successful at a price point their employers can afford. And when social workers are effective and happy, their clients recieve a higher quality of care.
                 </p>
             </section>
         </div>
@@ -185,7 +194,7 @@ layout: default
         <div class="landing__container">
             <h2 class="heading heading--h2 heading--center">
                 <span class="heading__subtitle">what our customers have to say about us</span>
-                Customer <span class="heading__emphasis">testimonials</span>
+                Customer <span class="heading--color-brand">testimonials</span>
             </h2>
             <div class="will-call-slick landing__content"
                 data-slick='{ "adaptiveHeight": true, "dots": true }'>
@@ -196,7 +205,7 @@ layout: default
                     <p class="heading heading--h4 heading--no-transform">
                         Benjamin Miller, Adult Education Coordinator
                         <br>
-                        <a class="text text--link"
+                        <a class="text text--link text--uppercase"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://progresolatino.org/">Progreso Latino, Inc.</a>
@@ -215,7 +224,7 @@ layout: default
                     <p class="heading heading--h4 heading--no-transform">
                         Megan Smith, PATH Program Manager
                         <br>
-                        <a class="text text--link"
+                        <a class="text text--link text--uppercase"
                             target="_blank"
                             rel="noopener noreferrer"
                             href="http://thehouseofhopecdc.org/">House of Hope CDC</a>
@@ -228,7 +237,7 @@ layout: default
                     <p class="heading heading--h4 heading--no-transform">
                         Kali Otto-Gentry, A Hand Up Program Coordinator
                         <br>
-                        <a class="text text--link"
+                        <a class="text text--link text--uppercase"
                             target="_blank"
                             rel="noopener noreferrer"
                             href="https://www.amoshouse.com/">Amos House</a>
@@ -241,7 +250,7 @@ layout: default
                     <p class="heading heading--h4 heading--no-transform">
                         Sara C. Melucci, Outreach Program Manager
                         <br>
-                        <a class="text text--link"
+                        <a class="text text--link text--uppercase"
                             target="_blank"
                             rel="noopener noreferrer"
                             href="http://thehouseofhopecdc.org/">House of Hope CDC</a>
@@ -254,26 +263,104 @@ layout: default
         <div class="landing__container">
             <h2 class="heading heading--h2 heading--center">
                 <span class="heading__subtitle">what the world has to say about us</span>
-                We're in <span class="heading__emphasis">the press</span>
+                We're in <span class="heading--color-brand">the press</span>
             </h2>
-            <div class="will-call-slick landing__content"
+            <div class="image-carousel-controls">
+                <div class="image-carousel-controls__item">
+                    <input id="slick-press-carousel-golocalprov"
+                        type="radio"
+                        checked
+                        data-controls-slick="slick-press-carousel"
+                        data-slick-slide="0">
+                    <label for="slick-press-carousel-golocalprov">
+                        <img src="{{ site.baseurl }}/assets/images/landing/logo-golocalprov.png" alt="GoLocalProv logo" class="image">
+                    </label>
+                </div>
+                <div class="image-carousel-controls__item">
+                    <input id="slick-press-carousel-american-inno"
+                        type="radio"
+                        data-controls-slick="slick-press-carousel"
+                        data-slick-slide="1">
+                    <label for="slick-press-carousel-american-inno">
+                        <img src="{{ site.baseurl }}/assets/images/landing/logo-american-inno.png" alt="American Inno logo" class="image">
+                    </label>
+                </div>
+                <div class="image-carousel-controls__item">
+                    <input id="slick-press-carousel-nasw"
+                        type="radio"
+                        data-controls-slick="slick-press-carousel"
+                        data-slick-slide="2">
+                    <label for="slick-press-carousel-nasw">
+                        <img src="{{ site.baseurl }}/assets/images/landing/logo-nasw.png" alt="National Association of Social Workers logo" class="image">
+                    </label>
+                </div>
+                <div class="image-carousel-controls__item">
+                    <input id="slick-press-carousel-nce"
+                        type="radio"
+                        data-controls-slick="slick-press-carousel"
+                        data-slick-slide="3">
+                    <label for="slick-press-carousel-nce">
+                        <img src="{{ site.baseurl }}/assets/images/landing/logo-nce.png" alt="Nelson Center for Entrepreneurship at Brown logo" class="image">
+                    </label>
+                </div>
+            </div>
+            <div id="slick-press-carousel"
+                class="will-call-slick landing__content"
                 data-slick='{ "adaptiveHeight": true, "dots": true }'>
                 <section>
                     <h4 class="heading heading--h4">
-                        <span class="heading__subtitle">American Inno</span>
-                        <span class="heading--no-transform">TextUp Wants to Help Social Workers Communicate Better</span>
+                        <span class="heading--no-transform">Brown’s Petersen Named Top Winner of 2018 RI Business Plan Competition</span>
                     </h4>
-                    <p class="text">
-                        While completing internships in social work, Brown University Graduates Michelle Peterson and Eric Bai, along with their friend Hanna Oh, a graduate from the Rhode Island School of Design, all came to a startling realization: They were all overwhelmed by how overworked their colleagues and supervisors were.
+                    <p class="text hide--mobile">
+                        Brown University student Michelle Petersen was named the top winner in the 2018 Rhode Island Business Plan Competiton.
                     </p>
-                    <a class="text text--link"
+                    <p class="text hide--mobile">
+                        Petersen, due to receive her bachelor's degree in public policy this month, said social workers typically handle up to 60 clients simultaneously, but on average dedicate only about 18% of their time to direct client service. The rest of their time is spent managing and documenting interactions. She said, TextUp, which tracks all critical information, allows users to devote more time on clients, fostering more enduring relationships and reducing job turnover.
+                    </p>
+                    <a class="text text--link text--uppercase"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://www.americaninno.com/rhodeisland/rhode-island-startup/textup-wants-to-help-social-workers-communicate-better/">Read more</a>
+                        href="https://www.americaninno.com/rhodeisland/rhode-island-startup/announcing-the-inaugural-coolest-companies-2018-nominees/">Read more</a>
+                    <hr>
+                    <h4 class="heading heading--h4">
+                        <span class="heading--no-transform">Brown Grad’s Startup Is Revolutionizing Social Work Communication</span>
+                    </h4>
+                    <p class="text hide--mobile">
+                        When Michelle Peterson saw a need for better communication tools for social workers, the then-Brown student went to work, creating what would become TextUp, a revolutionary communications software.
+                    </p>
+                    <a class="text text--link text--uppercase"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://www.golocalprov.com/live/brown-grads-startup-is-revolutionizing-social-work-communication">Read more</a>
                 </section>
                 <section>
                     <h4 class="heading heading--h4">
-                        <span class="heading__subtitle">National Association of Social Workers</span>
+                        <span class="heading--no-transform">TextUp Wants to Help Social Workers Communicate Better</span>
+                    </h4>
+                    <p class="text hide--mobile">
+                        While completing internships in social work, Brown University Graduates Michelle Peterson and Eric Bai, along with their friend Hanna Oh, a graduate from the Rhode Island School of Design, all came to a startling realization: They were all overwhelmed by how overworked their colleagues and supervisors were.
+                    </p>
+                    <a class="text text--link text--uppercase"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.americaninno.com/rhodeisland/rhode-island-startup/textup-wants-to-help-social-workers-communicate-better/">Read more</a>
+                    <hr>
+                    <h4 class="heading heading--h4">
+                        <span class="heading--no-transform">Announcing the Inaugural Coolest Companies 2018 Nominees</span>
+                    </h4>
+                    <p class="text hide--mobile">
+                        Perhaps one of the loveliest trends in the startup world — besides driving change for the better, duh — is the increasingly crazy ways companies make their cultures incredible.
+                    </p>
+                    <p class="text hide--mobile">
+                        Regardless, we asked the Rhode Island startup and entrepreneurial community for input on which in-state companies were the coolest — and it answered the call. Together, with editorial insight, we developed a list of nominees.
+                    </p>
+                    <a class="text text--link text--uppercase"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.americaninno.com/rhodeisland/rhode-island-startup/announcing-the-inaugural-coolest-companies-2018-nominees/">Read more</a>
+                </section>
+                <section>
+                    <h4 class="heading heading--h4">
                         <span class="heading--no-transform">
                             Social Work SmartBrief
                         </span>
@@ -281,106 +368,164 @@ layout: default
                     <p class="text">
                         A pair of social workers teamed up with a friend in design to develop a secure messaging and software platform that streamlines communication with colleagues and clients. TextUp enables social workers to keep personal phone numbers private and quickly access records from phone interactions, among other things.
                     </p>
-                    <a class="text text--link"
+                    <a class="text text--link text--uppercase"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://www.americaninno.com/rhodeisland/rhode-island-startup/announcing-the-inaugural-coolest-companies-2018-nominees/">Read more</a>
                 </section>
                 <section>
                     <h4 class="heading heading--h4">
-                        <span class="heading__subtitle">GoLocalProv</span>
-                        <span class="heading--no-transform">Brown’s Petersen Named Top Winner of 2018 RI Business Plan Competition</span>
-                    </h4>
-                    <p class="text">
-                        Brown University student Michelle Petersen was named the top winner in the 2018 Rhode Island Business Plan Competiton.
-                    </p>
-                    <p class="text">
-                        Petersen, due to receive her bachelor's degree in public policy this month, said social workers typically handle up to 60 clients simultaneously, but on average dedicate only about 18% of their time to direct client service. The rest of their time is spent managing and documenting interactions. She said, TextUp, which tracks all critical information, allows users to devote more time on clients, fostering more enduring relationships and reducing job turnover.
-                    </p>
-                    <a class="text text--link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.americaninno.com/rhodeisland/rhode-island-startup/announcing-the-inaugural-coolest-companies-2018-nominees/">Read more</a>
-                </section>
-                <section>
-                    <h4 class="heading heading--h4">
-                        <span class="heading__subtitle">American Inno</span>
-                        <span class="heading--no-transform">Announcing the Inaugural Coolest Companies 2018 Nominees</span>
-                    </h4>
-                    <p class="text">
-                        Perhaps one of the loveliest trends in the startup world — besides driving change for the better, duh — is the increasingly crazy ways companies make their cultures incredible.
-                    </p>
-                    <p class="text">
-                        Regardless, we asked the Rhode Island startup and entrepreneurial community for input on which in-state companies were the coolest — and it answered the call. Together, with editorial insight, we developed a list of nominees.
-                    </p>
-                    <a class="text text--link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.americaninno.com/rhodeisland/rhode-island-startup/announcing-the-inaugural-coolest-companies-2018-nominees/">Read more</a>
-                </section>
-                <section>
-                    <h4 class="heading heading--h4">
-                        <span class="heading__subtitle">GoLocalProv</span>
-                        <span class="heading--no-transform">Brown Grad’s Startup Is Revolutionizing Social Work Communication</span>
-                    </h4>
-                    <p class="text">
-                        When Michelle Peterson saw a need for better communication tools for social workers, the then-Brown student went to work, creating what would become TextUp, a revolutionary communications software.
-                    </p>
-                    <a class="text text--link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href="http://www.golocalprov.com/live/brown-grads-startup-is-revolutionizing-social-work-communication">Read more</a>
-                </section>
-                <section>
-                    <h4 class="heading heading--h4">
-                        <span class="heading__subtitle">Jonathan M. Nelson Center for Entrepreneurship</span>
                         <span class="heading--no-transform">Did you catch the big announcement?</span>
                     </h4>
                     <p class="text">
                         We are proud to announce that Michelle Petersen ‘18, co-founder of TextUp, has been named as the first Brown Venture Founder.
                     </p>
-                    <a class="text text--link"
+                    <a class="text text--link text--uppercase"
                         target="_blank"
                         rel="noopener noreferrer"
                         href="https://mailchi.mp/brown/welcome-back-updates-and-previews-for-the-semester-484935?e=fad0eb5e8f">Read more</a>
                 </section>
             </div>
+            <span id="landing-pricing-section"></span>
         </div>
     </article>
-<!--     <article class="landing landing--bg-dark">
+    <article class="landing landing--bg-dark">
         <div class="landing__container">
             <h2 class="heading heading--h2 heading--center heading--light">
                 <span class="heading__subtitle">simple pricing for quality service</span>
                 Our prices
             </h2>
-            <section class="landing__content landing__content--bg-light">
-                <h3 class="heading heading--h3">
-                    Monthly basic plan
+            <section class="plan landing__content">
+                <h3 class="plan__title">
+                    Unlimited Plan
                 </h3>
-                <p class="text">
-                    <span class="text__emphasized">30 day</span> free trial then
+                <p class="plan__description">
+                    <span class="text--emphasize text--large text--color-brand">30 day</span> free trial then
                 </p>
-                <div class="container container--spread">
-                    <div class="container container--direction-vertical">
-                        <img src="" alt="Illustration representing commercial enterprises" class="landing__image">
-                        <h4>Commercial</h4>
+                <div class="plan__options input-group-carousel-controls">
+                    <div class="input-group-carousel-controls__item">
+                        <input id="slick-unlimited-plan-carousel-non-profit"
+                            type="radio"
+                            checked
+                            data-controls-slick="slick-unlimited-plan-carousel"
+                            data-slick-slide="0">
+                        <label for="slick-unlimited-plan-carousel-non-profit">
+                            Non-profit
+                        </label>
+                    </div>
+                    <div class="input-group-carousel-controls__item">
+                        <input id="slick-unlimited-plan-carousel-commercial"
+                            type="radio"
+                            data-controls-slick="slick-unlimited-plan-carousel"
+                            data-slick-slide="1">
+                        <label for="slick-unlimited-plan-carousel-commercial">
+                            Commercial
+                        </label>
+                    </div>
+                </div>
+                <div id="slick-unlimited-plan-carousel"
+                    class="will-call-slick"
+                    data-slick='{ "adaptiveHeight": true, "dots": false }'>
+                    <div>
+                        <div class="plan__details-container">
+                            <div class="plan__detail-item">
+                                <h4 class="heading heading--color-brand heading--h4 heading--no-transform">
+                                    Paid monthly
+                                </h4>
+                                <p class="text">
+                                    <span class="text--emphasize text--large text--color-brand">$30</span>
+                                    <br>
+                                    TextUp Phone
+                                    <br>
+                                    per month
+                                </p>
+                            </div>
+                            <div class="plan__detail-item">
+                                <h4 class="heading heading--color-brand heading--h4 heading--no-transform">
+                                    Paid annually
+                                </h4>
+                                <p class="text">
+                                    <span class="text--emphasize text--large text--color-brand">$25</span>
+                                    <br>
+                                    TextUp Phone
+                                    <br>
+                                    per month
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="plan__details-container">
+                            <div class="plan__detail-item">
+                                <h4 class="heading heading--color-brand heading--h4 heading--no-transform">
+                                    Paid monthly
+                                </h4>
+                                <p class="text">
+                                    <span class="text--emphasize text--large text--color-brand">$50</span>
+                                    <br>
+                                    TextUp Phone
+                                    <br>
+                                    per month
+                                </p>
+                            </div>
+                            <div class="plan__detail-item">
+                                <h4 class="heading heading--color-brand heading--h4 heading--no-transform">
+                                    Paid annually
+                                </h4>
+                                <p class="text">
+                                    <span class="text--emphasize text--large text--color-brand">$40</span>
+                                    <br>
+                                    TextUp Phone
+                                    <br>
+                                    per month
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="plan landing__content">
+                <h3 class="plan__title">
+                    Pay-as-you-go Plan
+                </h3>
+                <p class="plan__description">
+                    <span class="text--emphasize text--large text--color-brand">30 day</span> free trial then
+                </p>
+                <div class="plan__details-container">
+                    <div class="plan__detail-item">
+                        <img class="image hide--mobile"
+                            src="{{ site.baseurl }}/assets/images/landing/cost-phone.png"
+                            alt="Pay-as-you-go phone cost illustration">
                         <p class="text">
-                            <span class="text__emphasized">$50</span>
+                            <span class="text--emphasize text--large text--color-brand">$5</span>
                             <br>
                             TextUp Phone
                             <br>
                             per month
                         </p>
                     </div>
-                    <div class="container container--direction-vertical">
-                        <img src="" alt="Illustration representing nonprofit enterprises" class="landing__image">
-                        <h4>Non-profit</h4>
+                    <div class="plan__detail-item">
+                        <img class="image hide--mobile"
+                            src="{{ site.baseurl }}/assets/images/landing/cost-texts.png"
+                            alt="Pay-as-you-go texts cost illustration">
                         <p class="text">
-                            <span class="text__emphasized">$30</span>
+                            <span class="text--emphasize text--large text--color-brand">$0.01</span>
                             <br>
-                            TextUp Phone
+                            Incoming and
                             <br>
-                            per month
+                            outgoing text
+                        </p>
+                    </div>
+                    <div class="plan__detail-item">
+                        <img class="image hide--mobile"
+                            src="{{ site.baseurl }}/assets/images/landing/cost-calls.png"
+                            alt="Pay-as-you-go calls cost illustration">
+                        <p class="text">
+                            <span class="text--emphasize text--large text--color-brand">$0.015</span>
+                            <br>
+                            Phone call
+                            <br>
+                            per minute
                         </p>
                     </div>
                 </div>
@@ -391,33 +536,62 @@ layout: default
         <div class="landing__container">
             <h2 class="heading heading--h2 heading--center">
                 <span class="heading__subtitle">who we are</span>
-                Our <span class="heading__emphasis">team</span>
+                Our <span class="heading--color-brand">team</span>
             </h2>
-
-        </div>
-    </article> -->
-    <article class="landing landing--bg-dark">
-        <div class="landing__container">
-            <h2 class="heading heading--h2 heading--center heading--light">
-                <span class="heading__subtitle">we would love to hear from you</span>
-                Contact <span class="heading__emphasis">us</span>
-            </h2>
-            <!-- <form action="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
-                class="landing__content form">
-                <label for="textup-landing-contact-message" class="sr-only">Your message</label>
-                <textarea id="textup-landing-contact-message"
-                    name="body"
-                    type="text"
-                    class="form__item"
-                    rows="5"
-                    placeholder="Your message here..."></textarea>
-                <div class="text-center">
-                    <button type="submit" class="button button--light">Send</button>
+            <div class="team">
+                <div class="team__member">
+                    <div class="team__headshot">
+                        <img class="image"
+                            src="{{ site.baseurl }}/assets/images/landing/michelle-temp.png"
+                            alt="Michelle Petersen">
+                        <div class="team__headshot__overlay">
+                            Michelle has served as a hospital clinic social worker, homeless street outreach worker, and suicidality counselor. A ‘18 Brown University Public Policy & Public Health graduate, Michelle has spent the last three years spearheading TextUp’s business development. She has been named Brown University’s first Brown Venture Founder and a Tech10 Top Entrepreneur.
+                        </div>
+                    </div>
+                    <h3 class="heading heading--h3 heading--no-transform">
+                        Michelle Petersen
+                        <span class="heading__subtitle">Co-founder, Operations Manager</span>
+                    </h3>
                 </div>
-            </form> -->
-
+                <div class="team__member">
+                    <div class="team__headshot">
+                        <img class="image"
+                            src="{{ site.baseurl }}/assets/images/landing/eric-temp.png"
+                            alt="Eric Bai">
+                        <div class="team__headshot__overlay">
+                            Eric’s first learned of the immense pressure put on social workers as a long-time volunteer at Harrington Hall, a Rhode Island men’s homeless shelter. A ‘15.5 Brown University Computational Biology graduate, Eric also serves as a medical system navigator for people who are homeless and seeking medical services.
+                        </div>
+                    </div>
+                    <h3 class="heading heading--h3 heading--no-transform">
+                        Eric Bai
+                        <span class="heading__subtitle">Co-founder, Developer</span>
+                    </h3>
+                </div>
+                <div class="team__member">
+                    <div class="team__headshot">
+                        <img class="image"
+                            src="{{ site.baseurl }}/assets/images/landing/hanna-temp.png"
+                            alt="Hanna Oh">
+                        <div class="team__headshot__overlay">
+                            Hanna, a current Design Lead at IBM, designs TextUp’s user interface and branding. A ‘15 graduate of the Rhode Island School of Design’s Industrial Design program, Hanna has extensive experience in user-driven and intuitive UI/UX design.
+                        </div>
+                    </div>
+                    <h3 class="heading heading--h3 heading--no-transform">
+                        Hanna Oh
+                        <span class="heading__subtitle">Co-founder, Designer</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="landing landing--bg-medium">
+        <div class="landing__container">
+            <h2 class="heading heading--h2 heading--center">
+                <span class="heading__subtitle">we would love to hear from you</span>
+                Contact <span class="heading--color-brand">us</span>
+            </h2>
             <div id="textup-landing-form-submit" class="landing__content hidden pad-b-double">
-                <h3 class="heading heading--h3 heading--center heading--light heading--no-transform">
+                <h3 class="heading heading--h3 heading--center heading--no-transform">
                     Thanks for getting in touch!
                     <br>
                     You'll hear back from us soon.
@@ -463,15 +637,15 @@ layout: default
                 <input type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="-973679672042260180">
 
                 <div class="text-center">
-                    <button type="submit" class="button button--light">Send</button>
+                    <button type="submit" class="button">Send</button>
                 </div>
             </form>
             <div class="text-center">
                 <a href="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
                     target="_top"
                     rel="noopener noreferrer"
-                    class="text text--light text--center">
-                    Or email us directly at connect@textup.org
+                    class="text text--center text--link">
+                    Or email us directly at <span class="text--emphasize">connect@textup.org</span>
                 </a>
             </div>
         </div>

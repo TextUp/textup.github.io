@@ -17,6 +17,10 @@ $(document).ready(function() {
     $("#" + slickId).slick("slickGoTo", slideIndex);
   });
 
+  $(".team__headshot").on("click", function() {
+    $(this).toggleClass("team__headshot--show-details")
+  });
+
   $("#textup-landing-contact-form").on("submit", function() {
     $(this).fadeOut(function() {
       $("#textup-landing-form-submit").toggleClass("hidden");

@@ -1,10 +1,46 @@
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    <li><a href="https://app.textup.org" target="_blank" rel="noopener noreferrer">Launch TextUp</a></li>
-    <li><a href="{{ site.baseurl }}/support">Support</a></li>
-    <li><a href="https://textup.featureupvote.com" target="_blank" rel="noopener noreferrer">Vote for features</a></li>
-    <li><a href="https://v2.textup.org" target="_blank" rel="noopener noreferrer">TextUp API</a></li>
-    <li><a href="https://status.textup.org" target="_blank" rel="noopener noreferrer">System status</a></li>
-  </ul>
+<div class="footer landing__container">
+    <img class="footer__logo"
+        src="{{ site.baseurl }}/assets/images/logo.png"
+        alt="TextUp logo">
+    <div class="footer__body">
+        <ul class="footer__links">
+            <li>
+                <a class="text text--link"
+                    href="https://app.textup.org"
+                    target="_blank"
+                    rel="noopener noreferrer">Launch TextUp</a>
+            </li>
+            <li>
+                <a class="text text--link"
+                    href="{{ site.baseurl }}/support">Support</a>
+            </li>
+            <li>
+                <a class="text text--link"
+                    href="https://textup.featureupvote.com"
+                    target="_blank"
+                    rel="noopener noreferrer">Vote for features</a>
+            </li>
+            <li>
+                <a class="text text--link"
+                    href="https://v2.textup.org"
+                    target="_blank"
+                    rel="noopener noreferrer">TextUp API</a>
+            </li>
+            <li>
+                <a class="text text--link"
+                    href="https://status.textup.org"
+                    target="_blank"
+                    rel="noopener noreferrer">System status</a>
+            </li>
+        </ul>
+        <p class="text">
+            TextUp works across major browsers because of
+            <img class="footer__attribution-image"
+                src="{{ site.baseurl }}/assets/images/browserstack.png"
+                alt="BrowserStack logo">
+        </p>
+        <p class="text">
+            &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. All Rights Reserved.
+        </p>
+    </div>
 </div>
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
