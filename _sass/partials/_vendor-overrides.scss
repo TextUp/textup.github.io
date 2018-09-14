@@ -1,0 +1,23 @@
+.slick-slide {
+    overflow: hidden;
+}
+.slick-arrow.slick {
+    &-prev,
+    &-next {
+        top: 0;
+        height: 100%;
+        width: $baseunit * 2;
+        transform: none;
+        transition: all 0.2s;
+
+        &:before {
+            font-size: $baseunit * 2;
+        }
+    }
+    &-prev {
+        left: $baseunit * -5;
+    }
+    &-next {
+        right: $baseunit * -5;
+    }
+}

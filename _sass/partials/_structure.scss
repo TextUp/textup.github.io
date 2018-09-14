@@ -1,18 +1,282 @@
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 * {
     box-sizing: border-box;
 }
 
 html {
     font-size: 14px;
+}
+
+.overall {
+    $drawer-width: $baseunit * 15;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &--drawer-open {
+        overflow: hidden;
+
+        .overall__content {
+            left: $drawer-width;
+        }
+        .overall__overlay {
+            display: block;
+            opacity: 1;
+            z-index: 100;
+        }
+        .overall__drawer {
+            left: 0;
+            z-index: 200;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 0;
+        min-height: 100%;
+        transition: left 0.5s;
+
+        &__main {
+            min-height: 80vh;
+        }
+    }
+    &__overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+    }
+    &__drawer {
+        position: fixed;
+        top: 0;
+        left: $drawer-width * -1;
+        height: 100%;
+        width: $drawer-width;
+        margin: 0;
+        padding: 0;
+        background-color: $bg-dark-color;
+        color: $color-white;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transition: left 0.5s;
+        list-style: none;
+
+        &__item {
+            margin: 0;
+
+            &:first-child {
+                margin-top: $baseunit * 2;
+            }
+            &--end-section {
+                border-bottom: 1px solid tint($bg-dark-color);
+                padding-bottom: $baseunit;
+                margin-bottom: $baseunit;
+            }
+        }
+        &__link {
+            @extend .text-ellipsis;
+
+            display: block;
+            padding: $baseunit;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &,
+            &:link,
+            &:visited,
+            &:focus,
+            &:hover,
+            &:active {
+                color: $color-white;
+                font-weight: $font-weight-bold;
+            }
+        }
+    }
+}
+
+.header {
+    $header-height: $baseunit * 5;
+
+    height: $header-height;
+    border-bottom: 5px solid $color-brand;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    background-color: $color-light-seafoam;
+    animation: $intro-transition;
+    animation-delay: 0.15s;
+    z-index: 20;
+
+    &--sticky {
+        position: sticky;
+        top: 0;
+    }
+    &__drawer-control {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 100%;
+        padding: $baseunit;
+        background-color: transparent;
+        border-width: 0;
+        z-index: 10;
+
+        @include breakpoint($large) {
+            display: none;
+        }
+        &__label {
+            @extend .navicon;
+
+            background: $color-brand;
+
+            &:before,
+            &:after {
+                background: $color-brand;
+            }
+        }
+    }
+    // more performant to not have display: flex; and position: sticky; on same element
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100%;
+    }
+    &__logo {
+        height: $header-height * 0.6;
+        margin: 0 ($baseunit * 2);
+
+        img {
+            height: 100%;
+        }
+    }
+    &__search {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        height: 100%;
+        padding: $baseunit ($baseunit * 1.5);
+        margin: 0;
+    }
+    &__nav {
+        display: none;
+
+        @include breakpoint($large) {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            &--left {
+                justify-content: flex-end;
+            }
+            &--right {
+                justify-content: flex-start;
+            }
+        }
+    }
+    &__nav-link {
+        @extend .text;
+
+        padding: $baseunit * 2;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        &--emphasize {
+            @extend .text--link;
+        }
+        &.header__nav-link--emphasize {
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+.footer {
+    padding: ($baseunit * 2) 0;
+    margin-top: 0;
+    border-top: 2px solid $border-color;
+    background-color: $color-light-seafoam;
+    overflow: hidden;
+
+    @include breakpoint($medium) {
+        padding: ($baseunit * 2) $baseunit;
+    }
+    @include breakpoint($large) {
+        padding: ($baseunit * 2) 0;
+    }
+    &__container {
+        @extend .landing__container;
+    }
+    & &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+
+        @include breakpoint($medium) {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+    }
+    &__logo {
+        height: $baseunit * 3;
+        margin-bottom: $baseunit * 2;
+
+        @include breakpoint($medium) {
+            height: $baseunit * 4;
+            margin-bottom: 0;
+        }
+    }
+    &__body {
+        text-align: left;
+
+        @include breakpoint($medium) {
+            text-align: right;
+        }
+    }
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: $baseunit;
+        padding: 0;
+        list-style: none;
+
+        @include breakpoint($medium) {
+            flex-wrap: nowrap;
+            flex-direction: row;
+
+            $footer-links-spacing: $baseunit * 2;
+            li + li {
+                position: relative;
+                margin-left: $footer-links-spacing;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: $footer-links-spacing * -1 / 2;
+                    transform: translate(-50%, -50%);
+                    height: 3px;
+                    width: 3px;
+                    background-color: $font-color;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+    &__attribution-image {
+        height: $baseunit * 1.4;
+        margin-left: $baseunit * 0.3;
+    }
 }
 
 .landing {
@@ -130,582 +394,6 @@ html {
         }
         &--left &__image {
             left: 10%;
-        }
-    }
-}
-
-.hero {
-    $distance-from-bottom: 20%;
-
-    position: relative;
-    height: 85vh;
-    max-height: 600px;
-    background-color: $color-brand;
-    overflow: hidden;
-
-    @include breakpoint($medium) {
-        background-color: $color-white;
-
-        &:before {
-            content: "";
-            position: absolute;
-            bottom: $distance-from-bottom;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: $color-brand;
-        }
-    }
-    &__content {
-        position: absolute;
-        left: 50%;
-        width: 90%;
-        bottom: calc(#{$distance-from-bottom} + #{$baseunit * 3});
-        transform: translateX(-50%);
-
-        @include breakpoint($medium) {
-            position: absolute;
-            left: auto;
-            width: 30%;
-            bottom: calc(#{$distance-from-bottom} + #{$baseunit * 8});
-            transform: none;
-
-            left: 10%;
-            min-width: 300px;
-        }
-        @include breakpoint($x-large) {
-            left: auto;
-            min-width: 400px;
-        }
-    }
-    &__image {
-        position: absolute;
-        top: calc(100% - #{$distance-from-bottom} + #{$spacing});
-        left: 50%;
-        bottom: $distance-from-bottom / 2;
-        width: 100%;
-        transform: translateX(-50%);
-        z-index: 10;
-
-        @include breakpoint($medium) {
-            top: auto;
-            bottom: $distance-from-bottom / 2;
-            height: 70%;
-            width: auto;
-            transform: none;
-        }
-    }
-}
-
-.image {
-    animation: fadein 1.5s;
-
-    &--with-shadow {
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
-    }
-}
-
-.hide--mobile {
-    display: none;
-
-    @include breakpoint($medium) {
-        display: block;
-    }
-}
-
-.heading {
-    color: $font-color;
-    text-transform: uppercase;
-    font-weight: $font-weight-std;
-    font-family: inherit;
-
-    &--h1 {
-        margin-bottom: $baseunit * 0.5;
-        font-size: $baseunit * 2.5;
-    }
-    &--h2 {
-        margin-bottom: $baseunit * 2;
-        font-size: $baseunit * 2;
-    }
-    &--h3 {
-        margin-bottom: $baseunit;
-        font-size: $baseunit * 1.5;
-    }
-    &--h4 {
-        margin-bottom: $baseunit;
-        font-size: $baseunit * 1.3;
-    }
-    &--center {
-        text-align: center;
-    }
-    &--no-transform {
-        text-transform: none;
-    }
-    &--light {
-        color: $color-white;
-
-        .heading--color-brand {
-            color: $color-white;
-        }
-        .heading__subtitle {
-            color: $color-white;
-        }
-    }
-    &--color-brand {
-        color: $color-brand;
-    }
-    &__subtitle {
-        display: block;
-        color: tint($font-color);
-        font-size: $baseunit;
-    }
-}
-
-.text {
-    margin-bottom: $baseunit;
-    font-size: $baseunit;
-    font-weight: $font-weight-std;
-    font-family: inherit;
-
-    &,
-    &:link,
-    &:visited,
-    &:focus,
-    &:hover,
-    &:active {
-        color: $font-color;
-    }
-
-    &--light {
-        &,
-        &:link,
-        &:visited,
-        &:focus,
-        &:hover,
-        &:active {
-            color: $color-white;
-        }
-    }
-    &--link {
-        &,
-        &:link,
-        &:visited {
-            color: $color-brand;
-        }
-        &:focus,
-        &:hover,
-        &:active {
-            color: shade($color-brand);
-        }
-    }
-    &--emphasize {
-        font-weight: $font-weight-bold;
-    }
-    &--uppercase {
-        text-transform: uppercase;
-    }
-    &--large {
-        font-size: $baseunit * 2;
-        font-weight: 300;
-    }
-    &--color-brand {
-        &,
-        &:link,
-        &:visited,
-        &:focus,
-        &:hover,
-        &:active {
-            color: $color-brand;
-        }
-    }
-}
-
-.form {
-    background-color: transparent;
-
-    &__item {
-        @extend .form-control;
-
-        margin-bottom: $spacing;
-        border-width: 0;
-    }
-}
-
-.button {
-    &,
-    &:link,
-    &:visited {
-        display: inline-block;
-        min-height: $control-height;
-        padding: 0 $baseunit;
-        background-color: $color-brand;
-        color: $color-white;
-        border-radius: $border-radius;
-        border: $border-width solid $color-brand;
-        font-weight: $font-weight-bold;
-        line-height: $control-height;
-        text-decoration: none;
-        cursor: pointer;
-        box-shadow: none;
-    }
-    &:focus,
-    &:hover,
-    &:active {
-        background-color: $color-brand-hover;
-    }
-
-    &--light {
-        &,
-        &.button:link,
-        &.button:visited {
-            background-color: $color-white;
-            color: $color-brand;
-        }
-        &.button:focus,
-        &.button:hover,
-        &.button:active {
-            background-color: $color-light-seafoam;
-        }
-    }
-}
-
-.input-group-carousel-controls {
-    display: flex;
-    justify-content: center;
-
-    &__item {
-        border: $border-width solid $color-brand;
-        border-width: $border-width 0;
-        border-radius: $border-radius;
-        text-align: center;
-        font-weight: $font-weight-bold;
-
-        &:first-child {
-            border-left-width: $border-width;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        &:last-child {
-            border-right-width: $border-width;
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-        input {
-            display: none;
-        }
-        label {
-            min-width: $baseunit * 8;
-            line-height: $control-height;
-            margin: 0;
-            background-color: $color-white;
-            color: $color-brand;
-            transition: all 0.2s;
-
-            @include breakpoint($medium) {
-                min-width: $baseunit * 10;
-            }
-            &:hover,
-            &:focus {
-                background-color: $color-seafoam;
-            }
-        }
-        input:checked + label {
-            background-color: $color-brand;
-            color: $color-white;
-
-            &:hover,
-            &:focus {
-                background-color: shade($color-brand);
-            }
-        }
-    }
-}
-
-.image-carousel-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: $baseunit * 3;
-
-    @include breakpoint($medium) {
-        flex-wrap: nowrap;
-        margin-bottom: $baseunit * 4;
-    }
-    &__item {
-        width: 50%;
-        margin-bottom: $baseunit;
-
-        @include breakpoint($medium) {
-            width: auto;
-            padding: 0 $baseunit;
-            margin-bottom: 0;
-        }
-        @include breakpoint($large) {
-            width: auto;
-            padding: 0 ($baseunit * 3);
-        }
-        input {
-            display: none;
-        }
-        label {
-            padding: $baseunit / 2;
-            background-color: transparent;
-            transition: transparent 0.5s;
-            cursor: pointer;
-            opacity: 0.8;
-
-            @include breakpoint($medium) {
-                width: auto;
-                padding: $baseunit;
-            }
-        }
-        input:checked + label {
-            background-color: $color-seafoam;
-            opacity: 1;
-        }
-    }
-}
-
-.plan {
-    padding: $baseunit * 2;
-    background-color: $color-white;
-
-    & + & {
-        margin-top: $baseunit * 2;
-    }
-    &__title {
-        @extend .heading;
-        @extend .heading--h3;
-        @extend .heading--no-transform;
-
-        color: $color-brand;
-        font-weight: $font-weight-bold;
-        text-align: center;
-    }
-    &__description {
-        @extend .text;
-
-        text-align: center;
-        margin-bottom: $baseunit * 1.5;
-    }
-    &__options {
-        margin-bottom: $baseunit * 2;
-    }
-    &__details-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
-        @include breakpoint($medium) {
-            flex-wrap: nowrap;
-        }
-    }
-    &__detail-item {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-
-        & + & {
-            padding-top: $baseunit;
-            border-top: 1px solid $border-color;
-        }
-        @include breakpoint($medium) {
-            min-width: 20%;
-            width: auto;
-
-            & + & {
-                padding-top: 0;
-                border-top-width: 0;
-            }
-        }
-    }
-}
-
-.team {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    @include breakpoint($medium) {
-        flex-wrap: nowrap;
-    }
-    &__member {
-        & + & {
-            margin-top: $baseunit * 3;
-        }
-        @include breakpoint($medium) {
-            padding: 0 ($baseunit * 2);
-
-            & + & {
-                margin-top: 0;
-            }
-        }
-    }
-    &__headshot {
-        position: relative;
-        margin-bottom: $baseunit;
-        cursor: pointer;
-
-        &--show-details &__overlay {
-            opacity: 1;
-        }
-        &__overlay {
-            @extend .text;
-            @extend .text--light;
-            @extend .text--emphasize;
-
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            padding: $baseunit;
-            background-color: rgba(0, 0, 0, 0.5);
-            overflow-x: hidden;
-            overflow-y: auto;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-    }
-}
-
-.slick-slide {
-    overflow: hidden;
-}
-.slick-arrow.slick {
-    &-prev,
-    &-next {
-        top: 0;
-        height: 100%;
-        width: $baseunit * 2;
-        transform: none;
-        transition: all 0.2s;
-
-        &:before {
-            font-size: $baseunit * 2;
-        }
-    }
-    &-prev {
-        left: $baseunit * -5;
-    }
-    &-next {
-        right: $baseunit * -5;
-    }
-}
-
-.page__footer {
-    border-top: 2px solid $border-color;
-    background-color: $color-light-seafoam;
-
-    footer {
-        padding: 0;
-        margin: 0;
-    }
-}
-.footer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: ($baseunit * 2) 0;
-    overflow: hidden;
-
-    @include breakpoint($medium) {
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        padding: ($baseunit * 2) $baseunit;
-    }
-    @include breakpoint($large) {
-        padding: ($baseunit * 2) 0;
-    }
-    &__logo {
-        height: $baseunit * 3;
-        margin-bottom: $baseunit * 2;
-
-        @include breakpoint($medium) {
-            height: $baseunit * 4;
-            margin-bottom: 0;
-        }
-    }
-    &__body {
-        text-align: left;
-
-        @include breakpoint($medium) {
-            text-align: right;
-        }
-    }
-    &__links {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 0;
-        margin-bottom: $baseunit;
-        padding: 0;
-        list-style: none;
-
-        @include breakpoint($medium) {
-            flex-wrap: nowrap;
-            flex-direction: row;
-
-            $footer-links-spacing: $baseunit * 2;
-            li + li {
-                position: relative;
-                margin-left: $footer-links-spacing;
-
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 50%;
-                    left: $footer-links-spacing * -1 / 2;
-                    transform: translate(-50%, -50%);
-                    height: 3px;
-                    width: 3px;
-                    background-color: $font-color;
-                    border-radius: 100%;
-                }
-            }
-        }
-    }
-    &__attribution-image {
-        height: $baseunit * 1.4;
-        margin-left: $baseunit * 0.3;
-    }
-}
-
-// TODO defer to the core styles implementation in the core styles once that is updated
-
-// from https://webaim.org/techniques/css/invisiblecontent/
-.sr-only {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-}
-
-.container {
-    display: flex;
-
-    &--xs-wrap {
-        flex-wrap: wrap;
-
-        @include breakpoint($medium) {
-            flex-wrap: nowrap;
-        }
-    }
-    &--reverse {
-        flex-direction: row-reverse;
-    }
-    &--spread {
-        justify-content: space-around;
-    }
-    &--at-ends {
-        justify-content: space-between;
-    }
-    &--direction-vertical {
-        flex-direction: column;
-
-        .container--reverse {
-            flex-direction: column-reverse;
         }
     }
 }

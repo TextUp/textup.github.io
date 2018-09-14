@@ -17,11 +17,15 @@ $intro-transition: intro 0.1s both;
 @import "core/main";
 
 // Custom styles
-@import "vars";
-@import "partials/overrides";
+@import "partials/animations";
+@import "partials/components";
 @import "partials/custom";
+@import "partials/landing";
 @import "partials/structure";
-@import "partials/sprites";
+@import "partials/theme-overrides";
+@import "partials/typography";
+@import "partials/utils";
+@import "partials/vendor-overrides";
 
 $slick-font-path: "../fonts/";
 $slick-loader-path: "../images/";

@@ -1,0 +1,154 @@
+.image {
+    animation: fadein 1.5s;
+
+    &--with-shadow {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+    }
+}
+
+.form {
+    background-color: transparent;
+
+    &__item {
+        @extend .form-control;
+
+        margin-bottom: $spacing;
+        border-width: 0;
+    }
+}
+
+.button {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        min-height: $control-height;
+        padding: 0 $baseunit;
+        background-color: $color-brand;
+        color: $color-white;
+        border-radius: $border-radius;
+        border: $border-width solid $color-brand;
+        font-weight: $font-weight-bold;
+        line-height: $control-height;
+        text-decoration: none;
+        cursor: pointer;
+        box-shadow: none;
+    }
+    &:focus,
+    &:hover,
+    &:active {
+        background-color: $color-brand-hover;
+    }
+
+    &--light {
+        &,
+        &.button:link,
+        &.button:visited {
+            background-color: $color-white;
+            color: $color-brand;
+        }
+        &.button:focus,
+        &.button:hover,
+        &.button:active {
+            background-color: $color-light-seafoam;
+        }
+    }
+}
+
+.input-group-carousel-controls {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        border: $border-width solid $color-brand;
+        border-width: $border-width 0;
+        border-radius: $border-radius;
+        text-align: center;
+        font-weight: $font-weight-bold;
+
+        &:first-child {
+            border-left-width: $border-width;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:last-child {
+            border-right-width: $border-width;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        input {
+            display: none;
+        }
+        label {
+            min-width: $baseunit * 8;
+            line-height: $control-height;
+            margin: 0;
+            background-color: $color-white;
+            color: $color-brand;
+            transition: all 0.2s;
+
+            @include breakpoint($medium) {
+                min-width: $baseunit * 10;
+            }
+            &:hover,
+            &:focus {
+                background-color: $color-seafoam;
+            }
+        }
+        input:checked + label {
+            background-color: $color-brand;
+            color: $color-white;
+
+            &:hover,
+            &:focus {
+                background-color: shade($color-brand);
+            }
+        }
+    }
+}
+
+.image-carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: $baseunit * 3;
+
+    @include breakpoint($medium) {
+        flex-wrap: nowrap;
+        margin-bottom: $baseunit * 4;
+    }
+    &__item {
+        width: 50%;
+        margin-bottom: $baseunit;
+
+        @include breakpoint($medium) {
+            width: auto;
+            padding: 0 $baseunit;
+            margin-bottom: 0;
+        }
+        @include breakpoint($large) {
+            width: auto;
+            padding: 0 ($baseunit * 3);
+        }
+        input {
+            display: none;
+        }
+        label {
+            padding: $baseunit / 2;
+            background-color: transparent;
+            transition: transparent 0.5s;
+            cursor: pointer;
+            opacity: 0.8;
+
+            @include breakpoint($medium) {
+                width: auto;
+                padding: $baseunit;
+            }
+        }
+        input:checked + label {
+            background-color: $color-seafoam;
+            opacity: 1;
+        }
+    }
+}

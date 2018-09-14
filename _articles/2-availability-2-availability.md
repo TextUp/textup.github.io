@@ -8,11 +8,11 @@ Set your availability to determine when you will receive notifications. The avai
 
 ## Availability statuses
 
-![Not available status]({{ site.baseurl }}/assets/images/support/availability-not-available.png){: .align-right} The availability option in the side menu is gray when you are not available.
+![Not available status]({{ site.baseurl }}/assets/images/support/availability-not-available.png){: .align-right.image.image--with-shadow} The availability option in the side menu is gray when you are not available.
 
 {% include step-separator.md %}
 
-![Available status]({{ site.baseurl }}/assets/images/support/availability-yes-available.png){: .align-right} The availability option in the side menu turns green when you are available.
+![Available status]({{ site.baseurl }}/assets/images/support/availability-yes-available.png){: .align-right.image.image--with-shadow} The availability option in the side menu turns green when you are available.
 
 {% include step-separator.md %}
 
@@ -20,12 +20,12 @@ Set your availability to determine when you will receive notifications. The avai
 
 ### Manually
 
-![Configuring availability manually]({{ site.baseurl }}/assets/images/support/availability-manual.png){: .align-right} Manually toggle on or off whether or not you want to receive notifications.
+![Configuring availability manually]({{ site.baseurl }}/assets/images/support/availability-manual.png){: .align-right.image.image--with-shadow} Manually toggle on or off whether or not you want to receive notifications.
 
 {% include step-separator.md %}
 
 ### Using a recurring schedule
 
-![Configuring availability using a schedule]({{ site.baseurl }}/assets/images/support/availability-schedule.png){: .align-right} Add, edit, or update time ranges for each day of week. You will receive notifications within the specified ranges. Contacts will receive the away message via text or via voicemail when you are away.
+![Configuring availability using a schedule]({{ site.baseurl }}/assets/images/support/availability-schedule.png){: .align-right.image.image--with-shadow} Add, edit, or update time ranges for each day of week. You will receive notifications within the specified ranges. Contacts will receive the away message via text or via voicemail when you are away.
 
 {% include step-separator.md %}

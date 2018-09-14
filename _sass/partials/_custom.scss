@@ -1,3 +1,31 @@
+.container {
+    display: flex;
+
+    &--xs-wrap {
+        flex-wrap: wrap;
+
+        @include breakpoint($medium) {
+            flex-wrap: nowrap;
+        }
+    }
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+    &--spread {
+        justify-content: space-around;
+    }
+    &--at-ends {
+        justify-content: space-between;
+    }
+    &--direction-vertical {
+        flex-direction: column;
+
+        .container--reverse {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
 .t-body {
     margin: 0 auto;
     padding: ($spacing * 2) 0;

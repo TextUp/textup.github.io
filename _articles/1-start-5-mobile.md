@@ -16,15 +16,15 @@ After you have pinned the TextUp web app to your home screen, log in with your c
 
 For Android devices, you must use **the Chrome browser** in order to pin apps to your home screen.
 
-![]({{ site.baseurl }}/assets/images/support/home-screen-android-1.png){: .align-right} Navigate to the TextUp app website. Select **the three vertical dots** in the upper right hand corner to open up the Chrome menu.
+![]({{ site.baseurl }}/assets/images/support/home-screen-android-1.png){: .align-right.image.image--with-shadow} Navigate to the TextUp app website. Select **the three vertical dots** in the upper right hand corner to open up the Chrome menu.
 
 {% include step-separator.md %}
 
-![]({{ site.baseurl }}/assets/images/support/home-screen-android-2.png){: .align-right} Select **Add to home screen** in this menu. Name the web app as you like before adding it.
+![]({{ site.baseurl }}/assets/images/support/home-screen-android-2.png){: .align-right.image.image--with-shadow} Select **Add to home screen** in this menu. Name the web app as you like before adding it.
 
 {% include step-separator.md %}
 
-![]({{ site.baseurl }}/assets/images/support/home-screen-android-3.png){: .align-right} Return to your home screen to see the TextUp icon. In the future, you can select this icon to open up the TextUp directly.
+![]({{ site.baseurl }}/assets/images/support/home-screen-android-3.png){: .align-right.image.image--with-shadow} Return to your home screen to see the TextUp icon. In the future, you can select this icon to open up the TextUp directly.
 
 {% include step-separator.md %}
 
@@ -32,15 +32,15 @@ For Android devices, you must use **the Chrome browser** in order to pin apps to
 
 For Apple devices, you must use **the Safari browser** in order to pin apps to your home screen.
 
-![]({{ site.baseurl }}/assets/images/support/home-screen-apple-1.png){: .align-right} Navigate to the TextUp app website. Select **the share icon** in the middle of the bottom bar.
+![]({{ site.baseurl }}/assets/images/support/home-screen-apple-1.png){: .align-right.image.image--with-shadow} Navigate to the TextUp app website. Select **the share icon** in the middle of the bottom bar.
 
 {% include step-separator.md %}
 
-![]({{ site.baseurl }}/assets/images/support/home-screen-apple-2.png){: .align-right} In the lower row of the share menu, select the **Add to home screen** option.
+![]({{ site.baseurl }}/assets/images/support/home-screen-apple-2.png){: .align-right.image.image--with-shadow} In the lower row of the share menu, select the **Add to home screen** option.
 
 {% include step-separator.md %}
 
-![]({{ site.baseurl }}/assets/images/support/home-screen-apple-3.png){: .align-right} Return to your home screen to see the TextUp icon. In the future, you can select this icon to open up the TextUp directly.
+![]({{ site.baseurl }}/assets/images/support/home-screen-apple-3.png){: .align-right.image.image--with-shadow} Return to your home screen to see the TextUp icon. In the future, you can select this icon to open up the TextUp directly.
 
 {% include step-separator.md %}
 

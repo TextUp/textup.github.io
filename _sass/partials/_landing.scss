@@ -1,0 +1,166 @@
+.hero {
+    $distance-from-bottom: 20%;
+
+    position: relative;
+    height: 85vh;
+    max-height: 600px;
+    background-color: $color-brand;
+    overflow: hidden;
+
+    @include breakpoint($medium) {
+        background-color: $color-white;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: $distance-from-bottom;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $color-brand;
+        }
+    }
+    &__content {
+        position: absolute;
+        left: 50%;
+        width: 90%;
+        bottom: calc(#{$distance-from-bottom} + #{$baseunit * 3});
+        transform: translateX(-50%);
+
+        @include breakpoint($medium) {
+            position: absolute;
+            left: auto;
+            width: 30%;
+            bottom: calc(#{$distance-from-bottom} + #{$baseunit * 8});
+            transform: none;
+
+            left: 10%;
+            min-width: 300px;
+        }
+        @include breakpoint($x-large) {
+            left: auto;
+            min-width: 400px;
+        }
+    }
+    &__image {
+        position: absolute;
+        top: calc(100% - #{$distance-from-bottom} + #{$spacing});
+        left: 50%;
+        bottom: $distance-from-bottom / 2;
+        width: 100%;
+        transform: translateX(-50%);
+        z-index: 10;
+
+        @include breakpoint($medium) {
+            top: auto;
+            bottom: $distance-from-bottom / 2;
+            height: 70%;
+            width: auto;
+            transform: none;
+        }
+    }
+}
+
+.plan {
+    padding: $baseunit * 2;
+    background-color: $color-white;
+
+    & + & {
+        margin-top: $baseunit * 2;
+    }
+    &__title {
+        @extend .heading;
+        @extend .heading--h3;
+        @extend .heading--no-transform;
+
+        color: $color-brand;
+        font-weight: $font-weight-bold;
+        text-align: center;
+    }
+    &__description {
+        @extend .text;
+
+        text-align: center;
+        margin-bottom: $baseunit * 1.5;
+    }
+    &__options {
+        margin-bottom: $baseunit * 2;
+    }
+    &__details-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        @include breakpoint($medium) {
+            flex-wrap: nowrap;
+        }
+    }
+    &__detail-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+        & + & {
+            padding-top: $baseunit;
+            border-top: 1px solid $border-color;
+        }
+        @include breakpoint($medium) {
+            min-width: 20%;
+            width: auto;
+
+            & + & {
+                padding-top: 0;
+                border-top-width: 0;
+            }
+        }
+    }
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @include breakpoint($medium) {
+        flex-wrap: nowrap;
+    }
+    &__member {
+        & + & {
+            margin-top: $baseunit * 3;
+        }
+        @include breakpoint($medium) {
+            padding: 0 ($baseunit * 2);
+
+            & + & {
+                margin-top: 0;
+            }
+        }
+    }
+    &__headshot {
+        position: relative;
+        margin-bottom: $baseunit;
+        cursor: pointer;
+
+        &--show-details &__overlay {
+            opacity: 1;
+        }
+        &__overlay {
+            @extend .text;
+            @extend .text--light;
+            @extend .text--emphasize;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            padding: $baseunit;
+            background-color: rgba(0, 0, 0, 0.5);
+            overflow-x: hidden;
+            overflow-y: auto;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+    }
+}

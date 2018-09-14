@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  $(".can-toggle-nav-drawer").on("click", function() {
+    $("body").toggleClass("overall--drawer-open");
+  });
+
   $(".will-call-slick")
     .slick()
     .on("beforeChange", function(event, slick, currentSlide, nextSlide) {
@@ -18,7 +22,7 @@ $(document).ready(function() {
   });
 
   $(".team__headshot").on("click", function() {
-    $(this).toggleClass("team__headshot--show-details")
+    $(this).toggleClass("team__headshot--show-details");
   });
 
   $("#textup-landing-contact-form").on("submit", function() {

@@ -7,13 +7,13 @@ To unblock a contact, select a contact from the Blocked list. Select the More me
 
 ## Mobile
 
-![Toolbar menu - mobile]({{ site.baseurl }}/assets/images/support/contactstoolbarmenumobile.png){: .align-right} On mobile devices, blocked contacts can be accessed via the side menu. Select Blocked under Contacts.
+![Toolbar menu - mobile]({{ site.baseurl }}/assets/images/support/contactstoolbarmenumobile.png){: .align-right.image.image--with-shadow} On mobile devices, blocked contacts can be accessed via the side menu. Select Blocked under Contacts.
 
 {% include step-separator.md %}
 
 ## Desktop
 
-![Filter contacts - desktop]({{ site.baseurl }}/assets/images/support/contactsfiltercontactsdesktop.png){: .align-center}
+![Filter contacts - desktop]({{ site.baseurl }}/assets/images/support/contactsfiltercontactsdesktop.png){: .align-center.image.image--with-shadow}
 
 In desktop view, blocked contacts can be accessed by clicking the Filter Contacts icon when viewing your contact list. Choose Blocked from this drop-down.
 

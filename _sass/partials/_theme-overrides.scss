@@ -6,60 +6,18 @@
     }
 }
 
-.masthead {
-    border-bottom: 5px solid $color-brand;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
-    background-color: $color-light-seafoam;
-
-    &--home {
-        position: sticky;
-        top: 0;
-    }
-    &__inner-wrap {
-        padding: 0;
-    }
-    &__menu-item {
-        text-transform: uppercase;
-    }
-}
-
-.greedy-nav {
-    padding: $baseunit 0;
-    background-color: $color-light-seafoam;
-
-    .site-title {
-        height: 45px;
-
-        img {
-            height: 100%;
-            margin-right: 0.5 * $spacing;
-            margin-left: $spacing;
-        }
-    }
-    .visible-links a:before {
-        left: -2px;
-        height: 2px;
-        border-radius: 3px;
-        width: calc(100% + 4px);
-    }
-}
-
-.page__footer {
-    margin-top: 0;
-}
-
 .search-content {
     @extend .t-body;
 
     .search-input {
         border-bottom: 1px solid $border-color;
         border-radius: 0;
-        padding: ($spacing / 2) 0;
+        padding: ($baseunit / 2) 0;
     }
     .results {
         &__found {
-            margin-bottom: $spacing * 2;
-            font-size: $spacing;
+            margin-bottom: $baseunit * 2;
+            font-size: $baseunit;
         }
     }
 }
@@ -82,34 +40,43 @@
 }
 
 .sidebar {
-    $color-active: #73ccff;
-    $color-bg: #656565;
+    $color-active: $color-brand;
+    $color-bg: #5a5a5a;
     $circle-size: 5px;
-    $circle-offset: -1.5em;
+    $circle-offset: $baseunit * -1.5;
 
-    padding: 1em;
-    background-color: $color-bg;
-    color: white;
     opacity: 1;
 
-    &.sticky {
-        height: 100vh;
-        top: 0;
+    @include breakpoint($large) {
+        padding: $baseunit;
+        background-color: $color-bg;
+        color: white;
+
+        &.sticky {
+            height: 100vh;
+            top: 0;
+        }
     }
     .nav__list {
         height: auto;
+        margin: 0;
     }
     .nav__items {
-        margin-bottom: 2em;
+        padding: 0 ($baseunit * 2);
 
+        @include breakpoint($large) {
+            margin-bottom: $baseunit * 2;
+            padding: 0;
+        }
         & > li {
-            margin-top: 1em;
+            margin-top: $baseunit;
         }
         ul {
-            padding-left: 2em;
+            padding-left: $baseunit * 2;
 
             li {
                 position: relative;
+                font-size: $baseunit;
 
                 &:not(:last-child):before {
                     content: "";
@@ -138,11 +105,18 @@
                         width: $circle-size;
                         border: 1px solid $color-active;
                         border-radius: 100%;
-                        background-color: $color-bg;
+                        background-color: $color-white;
+
+                        @include breakpoint($large) {
+                            background-color: $color-bg;
+                        }
                     }
                     &.active {
                         color: $color-active;
 
+                        @include breakpoint($large) {
+                            color: tint($color-active, 1.5);
+                        }
                         &:after {
                             background-color: $color-active;
                         }
@@ -151,33 +125,97 @@
             }
         }
     }
-    .author__name,
     .nav__sub-title {
-        color: white;
+        color: $color-brand;
         border-bottom-width: 0;
-        font-size: $spacing;
+        font-size: $baseunit;
         text-transform: none;
+
+        @include breakpoint($large) {
+            color: $color-white;
+        }
+    }
+    .nav__sub-title,
+    .author__bio {
+        font-size: $baseunit;
+    }
+    .author__name {
+        color: $color-white;
+        font-weight: $font-weight-std;
+        font-size: $baseunit * 2;
+    }
+    .author__content {
+        display: none;
+
+        @include breakpoint($large) {
+            display: block;
+        }
+    }
+    .author__urls-wrapper {
+        button {
+            display: none;
+        }
+        a {
+            @extend .text;
+            @extend .text--light;
+
+            text-decoration: underline;
+        }
     }
 }
 
-h1,
-h2,
-h3 {
-    font-family: inherit;
-    text-transform: none;
-    margin-bottom: 0.75rem;
+@include breakpoint(max-width $large - 1px) {
+    .nav__list {
+        & label {
+            &,
+            &:link,
+            &:visited,
+            &:focus,
+            &:hover,
+            &:active {
+                margin: ($baseunit * 2) ($baseunit * 2) $baseunit;
+                background-color: $color-brand;
+                color: $color-white;
+                border-width: 0;
+                border-radius: $border-radius;
+
+                &:before,
+                &:after {
+                    background-color: $color-white;
+                }
+            }
+        }
+        & input:checked {
+            & + label {
+                &,
+                &:link,
+                &:visited,
+                &:focus,
+                &:hover,
+                &:active {
+                    background-color: shade($color-brand);
+                    color: $color-white;
+
+                    &:before,
+                    &:after {
+                        background-color: $color-white;
+                    }
+                }
+            }
+            & ~ .nav__items {
+                max-height: 50vh;
+                margin-top: 0;
+                border-bottom: 1px solid $border-color;
+                overflow-x: hidden;
+                overflow-y: auto;
+                box-shadow: inset 0 -8px 20px -10px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
 }
-h1 {
-    font-size: 1.4rem;
-}
-h2 {
-    font-size: 1.2rem;
-}
-h3 {
-    font-size: 1rem;
-}
+
 .page {
-    margin: $spacing * 2;
+    margin: $baseunit * 2;
     max-width: 800px;
     float: left;
 
@@ -222,8 +260,8 @@ h3 {
                 box-shadow: none;
                 border-width: 0;
                 border-radius: 0;
-                margin: 0 0 ($spacing * 2);
-                padding: 0 0 ($spacing * 2);
+                margin: 0 0 ($baseunit * 2);
+                padding: 0 0 ($baseunit * 2);
                 border-bottom: 1px solid $border-color;
 
                 .nav__title {
@@ -234,6 +272,9 @@ h3 {
 
                     a {
                         @extend .text;
+                    }
+                    & a {
+                        display: inline-block;
                         color: $font-color;
                         padding: 0.25rem 0;
                         border-bottom-width: 0;
@@ -243,13 +284,10 @@ h3 {
                         margin-bottom: 0;
                     }
                     ul a {
-                        margin-left: $spacing * 2;
+                        margin-left: $baseunit * 2;
                     }
                 }
             }
-        }
-        img {
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
         }
         hr {
             visibility: hidden;

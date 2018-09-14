@@ -1,0 +1,123 @@
+h1,
+h2,
+h3 {
+    font-family: inherit;
+    text-transform: none;
+    margin-bottom: 0.75rem;
+}
+h1 {
+    font-size: 1.4rem;
+}
+h2 {
+    font-size: 1.2rem;
+}
+h3 {
+    font-size: 1rem;
+}
+
+.heading {
+    color: $font-color;
+    text-transform: uppercase;
+    font-weight: $font-weight-std;
+    font-family: inherit;
+
+    &--h1 {
+        margin-bottom: $baseunit * 0.5;
+        font-size: $baseunit * 2.5;
+    }
+    &--h2 {
+        margin-bottom: $baseunit * 2;
+        font-size: $baseunit * 2;
+    }
+    &--h3 {
+        margin-bottom: $baseunit;
+        font-size: $baseunit * 1.5;
+    }
+    &--h4 {
+        margin-bottom: $baseunit;
+        font-size: $baseunit * 1.3;
+    }
+    &--center {
+        text-align: center;
+    }
+    &--no-transform {
+        text-transform: none;
+    }
+    &--light {
+        color: $color-white;
+
+        .heading--color-brand {
+            color: $color-white;
+        }
+        .heading__subtitle {
+            color: $color-white;
+        }
+    }
+    &--color-brand {
+        color: $color-brand;
+    }
+    &__subtitle {
+        display: block;
+        color: tint($font-color);
+        font-size: $baseunit;
+    }
+}
+
+.text {
+    margin-bottom: $baseunit;
+    font-size: $baseunit;
+    font-weight: $font-weight-std;
+    font-family: inherit;
+
+    &,
+    &:link,
+    &:visited,
+    &:focus,
+    &:hover,
+    &:active {
+        color: $font-color;
+    }
+
+    &--light {
+        &,
+        &:link,
+        &:visited,
+        &:focus,
+        &:hover,
+        &:active {
+            color: $color-white;
+        }
+    }
+    &--link {
+        &,
+        &:link,
+        &:visited {
+            color: $color-brand;
+        }
+        &:focus,
+        &:hover,
+        &:active {
+            color: shade($color-brand);
+        }
+    }
+    &--emphasize {
+        font-weight: $font-weight-bold;
+    }
+    &--uppercase {
+        text-transform: uppercase;
+    }
+    &--large {
+        font-size: $baseunit * 2;
+        font-weight: 300;
+    }
+    &--color-brand {
+        &,
+        &:link,
+        &:visited,
+        &:focus,
+        &:hover,
+        &:active {
+            color: $color-brand;
+        }
+    }
+}

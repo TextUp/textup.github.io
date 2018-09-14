@@ -8,7 +8,7 @@ TextUp support incoming and outgoing phone calls. Calls on TextUp are three-way 
 
 ## Using the keypad menu
 
-![Keypad slideout]({{ site.baseurl }}/assets/images/support/call-keypad-slideout.png){: .align-right} TextUp has a traditional key-pad interface for searching for contacts by phone number and typing in new phone numbers.
+![Keypad slideout]({{ site.baseurl }}/assets/images/support/call-keypad-slideout.png){: .align-right.image.image--with-shadow} TextUp has a traditional key-pad interface for searching for contacts by phone number and typing in new phone numbers.
 
 If the number you type in matches an existing contact, TextUp will take you to that particular contact and initiate a phone call.
 
@@ -18,10 +18,10 @@ If the number you type in does not match an existing contact, TextUp will create
 
 ## To an individual contact
 
-![Contact plus menu]({{ site.baseurl }}/assets/images/support/call-contact-plus-menu.png){: .align-right} To make outgoing phone calls to a particular contact, first navigate to the contact's page. Select the plus button next to the text bar, and select “Make call.”
+![Contact plus menu]({{ site.baseurl }}/assets/images/support/call-contact-plus-menu.png){: .align-right.image.image--with-shadow} To make outgoing phone calls to a particular contact, first navigate to the contact's page. Select the plus button next to the text bar, and select “Make call.”
 
 {% include step-separator.md %}
 
-![Making call]({{ site.baseurl }}/assets/images/support/call-contact-making-call.png){: .align-right} TextUp will call your personal phone and then call the contact, creating a sort of three-way call between your TextUp phone number, your personal phone number, and the contact.  
+![Making call]({{ site.baseurl }}/assets/images/support/call-contact-making-call.png){: .align-right.image.image--with-shadow} TextUp will call your personal phone and then call the contact, creating a sort of three-way call between your TextUp phone number, your personal phone number, and the contact.  
 
 {% include step-separator.md %}
