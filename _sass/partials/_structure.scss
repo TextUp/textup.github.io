@@ -170,6 +170,7 @@ html {
 
         @include breakpoint($large) {
             display: flex;
+            width: $baseunit * 25; // so the logo is centered
             margin: 0;
             padding: 0;
             list-style: none;
