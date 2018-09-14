@@ -16,7 +16,7 @@
         <a class="header__nav-link" href="{% if page.url != '/' %}{{ '/' | absolute_url }}{% endif %}#landing-pricing-section">Pricing</a>
       </li>
     </div>
-    <a class="header__logo" href="{{ '/' | absolute_url }}">
+    <a class="header__logo" href="{% if page.url != '/' %}{{ '/' | absolute_url }}{% endif %}#">
       <img src="{{ site.baseurl }}/assets/images/logo.png" alt="TextUp logo">
     </a>
     <div class="header__nav header__nav--right">
