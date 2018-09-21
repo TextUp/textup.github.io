@@ -34,8 +34,18 @@
             color: $font-color;
         }
     }
+    & &-title {
+        margin-bottom: $baseunit * 0.5;
+    }
     &-excerpt {
         @extend .text;
+    }
+}
+
+.entries-list {
+    .list__item + .list__item {
+        border-top: 1px solid $border-color;
+        padding-top: $baseunit;
     }
 }
 

@@ -124,12 +124,11 @@
 
         @include breakpoint($medium) {
             width: auto;
-            padding: 0 $baseunit;
+            padding: 0 ($baseunit / 2);
             margin-bottom: 0;
         }
         @include breakpoint($large) {
-            width: auto;
-            padding: 0 ($baseunit * 3);
+            padding: 0 $baseunit;
         }
         input {
             display: none;

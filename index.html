@@ -11,9 +11,7 @@ layout: default
                 </h1>
                 <p class="text text--light">TextUp enables social work agencies and nonprofits to foster strong client relationships built on consistent communication and reliable follow-up.</p>
                 <div class="container">
-                    <a href="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
-                        target="_top"
-                        rel="noopener noreferrer"
+                    <a href="#landing-contact-us-section"
                         class="button button--light margin-r">
                         Request a Demo
                     </a>
@@ -46,6 +44,12 @@ layout: default
             </p>
             <p class="text">
                 Practically speaking, TextUp gives social work and nonprofit staff the capacity of work phones at a fraction of the price. This gives staff what they want -- work-personal life separation -- while giving clients what they need -- a direct channel of communication. And our automated recordkeeping, one-click mass messaging, and myriad of other time-saving features lighten your administrative burden, giving you more time for direct client service.
+            </p>
+            <p class="text-center margin-t-double">
+                <a href="#landing-contact-us-section"
+                    class="button">
+                    Get in Touch
+                </a>
             </p>
         </section>
         <span id="landing-product-section"></span>
@@ -268,11 +272,20 @@ layout: default
         </h2>
         <div class="image-carousel-controls">
             <div class="image-carousel-controls__item">
-                <input id="slick-press-carousel-golocalprov"
+                <input id="slick-press-carousel-mc"
                     type="radio"
                     checked
                     data-controls-slick="slick-press-carousel"
                     data-slick-slide="0">
+                <label for="slick-press-carousel-mc">
+                    <img src="{{ site.baseurl }}/assets/images/landing/logo-mc.png" alt="MassChallenge logo" class="image">
+                </label>
+            </div>
+            <div class="image-carousel-controls__item">
+                <input id="slick-press-carousel-golocalprov"
+                    type="radio"
+                    data-controls-slick="slick-press-carousel"
+                    data-slick-slide="1">
                 <label for="slick-press-carousel-golocalprov">
                     <img src="{{ site.baseurl }}/assets/images/landing/logo-golocalprov.png" alt="GoLocalProv logo" class="image">
                 </label>
@@ -281,7 +294,7 @@ layout: default
                 <input id="slick-press-carousel-american-inno"
                     type="radio"
                     data-controls-slick="slick-press-carousel"
-                    data-slick-slide="1">
+                    data-slick-slide="2">
                 <label for="slick-press-carousel-american-inno">
                     <img src="{{ site.baseurl }}/assets/images/landing/logo-american-inno.png" alt="American Inno logo" class="image">
                 </label>
@@ -290,7 +303,7 @@ layout: default
                 <input id="slick-press-carousel-nasw"
                     type="radio"
                     data-controls-slick="slick-press-carousel"
-                    data-slick-slide="2">
+                    data-slick-slide="3">
                 <label for="slick-press-carousel-nasw">
                     <img src="{{ site.baseurl }}/assets/images/landing/logo-nasw.png" alt="National Association of Social Workers logo" class="image">
                 </label>
@@ -299,7 +312,7 @@ layout: default
                 <input id="slick-press-carousel-nce"
                     type="radio"
                     data-controls-slick="slick-press-carousel"
-                    data-slick-slide="3">
+                    data-slick-slide="4">
                 <label for="slick-press-carousel-nce">
                     <img src="{{ site.baseurl }}/assets/images/landing/logo-nce.png" alt="Nelson Center for Entrepreneurship at Brown logo" class="image">
                 </label>
@@ -308,6 +321,20 @@ layout: default
         <div id="slick-press-carousel"
             class="will-call-slick landing__content"
             data-slick='{ "adaptiveHeight": true, "dots": true }'>
+            <section>
+                <h4 class="heading heading--h4">
+                    <span class="heading--no-transform">
+                        MassChallenge Names Top 2018 Startups in Boston and Rhode Island
+                    </span>
+                </h4>
+                <p class="text">
+                    MassChallenge, a global network of zero-equity startup accelerators, today announced the top startups from its 2018 Boston and Rhode Island programs, which together accelerated more than 150 startups across industries (128 in Boston and 30 in Rhode Island) and from regions around the world.
+                </p>
+                <a class="text text--link text--uppercase"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://masschallenge.org/media/announcing-top-startups-boston-rhode-island-2018/">Read more</a>
+            </section>
             <section>
                 <h4 class="heading heading--h4">
                     <span class="heading--no-transform">Brown’s Petersen Named Top Winner of 2018 RI Business Plan Competition</span>
@@ -531,6 +558,12 @@ layout: default
                 </div>
             </div>
         </section>
+        <p class="text-center margin-t-double">
+            <a href="#landing-contact-us-section"
+                class="button button--light">
+                Request a Demo
+            </a>
+        </p>
     </div>
 </article>
 <article class="landing">
@@ -543,7 +576,7 @@ layout: default
             <div class="team__member">
                 <div class="team__headshot">
                     <img class="image"
-                        src="{{ site.baseurl }}/assets/images/landing/michelle-temp.png"
+                        src="{{ site.baseurl }}/assets/images/landing/michelle.png"
                         alt="Michelle Petersen">
                     <div class="team__headshot__overlay">
                         Michelle has served as a hospital clinic social worker, homeless street outreach worker, and suicidality counselor. A ‘18 Brown University Public Policy & Public Health graduate, Michelle has spent the last three years spearheading TextUp’s business development. She has been named Brown University’s first Brown Venture Founder and a Tech10 Top Entrepreneur.
@@ -557,7 +590,7 @@ layout: default
             <div class="team__member">
                 <div class="team__headshot">
                     <img class="image"
-                        src="{{ site.baseurl }}/assets/images/landing/eric-temp.png"
+                        src="{{ site.baseurl }}/assets/images/landing/eric.png"
                         alt="Eric Bai">
                     <div class="team__headshot__overlay">
                         Eric’s first learned of the immense pressure put on social workers as a long-time volunteer at Harrington Hall, a Rhode Island men’s homeless shelter. A ‘15.5 Brown University Computational Biology graduate, Eric also serves as a medical system navigator for people who are homeless and seeking medical services.
@@ -571,7 +604,7 @@ layout: default
             <div class="team__member">
                 <div class="team__headshot">
                     <img class="image"
-                        src="{{ site.baseurl }}/assets/images/landing/hanna-temp.png"
+                        src="{{ site.baseurl }}/assets/images/landing/hanna.png"
                         alt="Hanna Oh">
                     <div class="team__headshot__overlay">
                         Hanna, a current Design Lead at IBM, designs TextUp’s user interface and branding. A ‘15 graduate of the Rhode Island School of Design’s Industrial Design program, Hanna has extensive experience in user-driven and intuitive UI/UX design.
@@ -583,6 +616,7 @@ layout: default
                 </h3>
             </div>
         </div>
+        <span id="landing-contact-us-section"></span>
     </div>
 </article>
 <article class="landing landing--bg-medium">
