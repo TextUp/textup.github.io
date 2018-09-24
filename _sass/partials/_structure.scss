@@ -38,8 +38,55 @@ html {
         min-height: 100%;
         transition: left 0.5s;
 
+        &--scrolled &__top {
+            bottom: $baseunit;
+            opacity: 1;
+            z-index: 100;
+
+            @include breakpoint($medium) {
+                bottom: $baseunit * 2;
+            }
+        }
+
         &__main {
             min-height: 80vh;
+        }
+        &__top {
+            position: fixed;
+            right: $baseunit;
+            bottom: $baseunit * -5;
+            height: $baseunit * 3;
+            width: $baseunit * 3;
+            background-color: $color-light-seafoam;
+            border: 1px solid $color-seafoam;
+            border-radius: $border-radius;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14);
+            opacity: 0;
+            transition: all 0.2s;
+
+            @include breakpoint($medium) {
+                right: $baseunit * 2;
+                bottom: $baseunit * -8;
+                height: $baseunit * 4;
+                width: $baseunit * 4;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-bottom: ($baseunit * 0.75) solid $color-brand;
+                border-left: ($baseunit * 0.5) solid transparent;
+                border-right: ($baseunit * 0.5) solid transparent;
+
+                @include breakpoint($large) {
+                    border-bottom-width: $baseunit;
+                    border-left-width: $baseunit * 0.75;
+                    border-right-width: $baseunit * 0.75;
+                }
+            }
         }
     }
     &__overlay {
@@ -254,6 +301,7 @@ html {
         @include breakpoint($medium) {
             flex-wrap: nowrap;
             flex-direction: row;
+            justify-content: flex-end;
 
             $footer-links-spacing: $baseunit * 2;
             li + li {
