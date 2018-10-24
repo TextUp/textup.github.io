@@ -20,8 +20,10 @@ articles:
         url: /support/articles/notifications-personal-phone/
       - title: "Setting availability"
         url: /support/articles/notifications-availability/
-      - title: "Customizing away message"
+      - title: "Handling texts when you are away"
         url: /support/articles/notifications-away-message/
+      - title: "Handling calls when you are away"
+        url: /support/articles/notifications-voicemail/
 
   - title: Contacts
     description: "Manage contacts with TextUp"

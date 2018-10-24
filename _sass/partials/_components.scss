@@ -120,7 +120,6 @@
     margin-bottom: $baseunit * 3;
 
     @include breakpoint($medium) {
-        flex-wrap: nowrap;
         margin-bottom: $baseunit * 4;
     }
     &__item {
@@ -128,12 +127,12 @@
         margin-bottom: $baseunit;
 
         @include breakpoint($medium) {
-            width: auto;
-            padding: 0 ($baseunit / 2);
+            width: 30%;
+            padding: 0 ($baseunit * 2);
             margin-bottom: 0;
         }
         @include breakpoint($large) {
-            padding: 0 $baseunit;
+            padding: 0 ($baseunit * 3);
         }
         input {
             display: none;

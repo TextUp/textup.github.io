@@ -4,7 +4,8 @@ $danger-color: #c9302c;
 $success-color: #56a556;
 
 $color-brand: $brand-color;
-$color-brand-hover: tint($brand-color);
+$color-brand-dark: #103c56;
+$color-brand-hover: tint($color-brand);
 
 $color-white: #ffffff;
 $color-light-seafoam: #f5f8f8;
@@ -17,7 +18,7 @@ $bg-light-color: #f8f8f8;
 $bg-lightest-color: #fff;
 $border-color: #d3d3d3;
 $incoming-color: $border-color;
-$outgoing-color: $brand-color;
+$outgoing-color: $color-brand;
 
 // font
 $font-size: 14px;
