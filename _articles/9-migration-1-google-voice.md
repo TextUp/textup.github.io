@@ -3,7 +3,7 @@ title: "From Google Voice"
 permalink: /support/articles/migration-google-voice/
 ---
 
-Transferring your Google Voice number to a TextUp number is a three step process that this guide will walk you through. After the required documents are submitted, it takes between 2 to 4 weeks for the transfer process to complete. If anything goes wrong, we’ll be in touch to keep you updated about steps to fix the problem. When the transfer process completes, we’ll email you letting you know your TextUp account is all set up with your Google Voice number.
+Transferring your Google Voice number to a TextUp number is a three step process that this guide will walk you through. After the required documents are submitted, it takes between 1 to 2 weeks for the transfer process to complete. If anything goes wrong, we’ll be in touch to keep you updated about steps to fix the problem. When the transfer process completes, we’ll email you letting you know your TextUp account is all set up with your Google Voice number.
 
 The three steps of the process we will go through are:
 
