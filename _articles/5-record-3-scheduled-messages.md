@@ -20,6 +20,12 @@ The voice call scheduled message option is well-suited for clients with a limite
 
 {% include step-separator.md %}
 
+![Scheduling images and audio recordings]({{ site.baseurl }}/assets/images/support/scheduled-media.png){: .align-right.image.image--with-shadow} You may also attach images and record audio messages to scheduled messages. If the scheduled message is scheduled as a text, TextUp will send a multimedia message. if the scheduled message is scheduled as a call, text will be read via robo-voice and audio recordings be played over phone call. Any associated images will be delivered via text message at the same time the call is initiated.
+
+**Some devices may not currently support recording audio. For those devices, the option to attach audio recordings will not be shown.**
+
+{% include step-separator.md %}
+
 ![Creating scheduled message with repeat]({{ site.baseurl }}/assets/images/support/scheduled-creating-repeat.png){: .align-right.image.image--with-shadow} Messages can be scheduled to send on a one-time or recurring basis and you can choose to be notified when the message sends.  
 
 {% include step-separator.md %}

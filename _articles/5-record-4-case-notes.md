@@ -22,7 +22,9 @@ Doing so reveals two options under **Documentation**:
 
 {% include step-separator.md %}
 
-![Case notes inserting image]({{ site.baseurl }}/assets/images/support/case-notes-insert-image.jpg){: .align-right.image.image--with-shadow} When creating a new note, pressing **+ Add Images** allows the user to attach photos to the new note. On mobile devices, the user can add an existing photo or take a new photo and attach it right away.
+![Case notes inserting media]({{ site.baseurl }}/assets/images/support/case-notes-media.png){: .align-right.image.image--with-shadow} When creating a new note, pressing **Add images** allows the user to attach photos to the new note. On mobile devices, the user can add an existing photo or take a new photo and attach it right away. On devices that support recording audio, you will also be able to record audio memos and attach these to notes.
+
+**Some devices may not currently support recording audio. For those devices, the option to attach audio recordings will not be shown.**
 
 {% include step-separator.md %}
 

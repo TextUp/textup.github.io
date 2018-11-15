@@ -28,6 +28,26 @@ excerpt: "Text messages in the client record"
 
 {% include step-separator.md %}
 
+### Sending images
+
+![Text sending images]({{ site.baseurl }}/assets/images/support/text-image.gif){: .align-right.image.image--with-shadow} When you select the option to attach images, the images will appear below your message after they are finished processing. Select any image to see a larger version.
+
+{% include step-separator.md %}
+
+![Text selecting versus taking pictures]({{ site.baseurl }}/assets/images/support/text-image-attachment-options.png){: .align-right.image.image--with-shadow} On mobile devices, you may have the option to take a picture directly or select multiple images from your photo library.
+
+{% include step-separator.md %}
+
+### Sending audio recordings
+
+![Text sending audio recordings]({{ site.baseurl }}/assets/images/support/text-audio-message.gif){: .align-right.image.image--with-shadow} When you select the option to attach an audio recording, you will see a audio recorder appear. After you are done recording, you may listen to the recording to decide if you would like to record again. To ensure deliverability, each audio recording has a capped duration. However, you may attach multiple audio recordings.
+
+{% include step-separator.md %}
+
+![Text audio recordings not supported]({{ site.baseurl }}/assets/images/support/text-audio-not-supported.png){: .align-right.image.image--with-shadow} On devices that support do not support recording audio directly, you will see a picture icon to attach images. When you access TextUp using a device that supports audio recording, you will again have the option to attach both images and audio.
+
+{% include step-separator.md %}
+
 ## Through a tag
 
 ![Tags list]({{ site.baseurl }}/assets/images/support/text-tags-list.png){: .align-right.image.image--with-shadow} When viewing the contacts belonging to a tag, the tag's options and record of communication is accessible via the icon to the right of the tag name.
