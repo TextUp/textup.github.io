@@ -4,6 +4,8 @@ articles:
     children:
       - title: "Welcome"
         url: /support/articles/getting-started-welcome/
+      - title: "Video walkthrough"
+        url: /support/articles/getting-started-video-walkthrough/
       - title: "Logging in"
         url: /support/articles/getting-started-logging-in/
       - title: "Setting up"
@@ -76,6 +78,8 @@ articles:
         url: /support/articles/record-case-notes/
       - title: "Sharing"
         url: /support/articles/record-sharing/
+      - title: "Exporting"
+        url: /support/articles/record-exporting/
 
   - title: Teams
     description: "Work as a team with colleagues using TextUp"

@@ -226,14 +226,16 @@
 
 .page {
     margin: $baseunit * 2;
-    max-width: 800px;
+    max-width: 100%;
     float: left;
 
     @include breakpoint($large) {
         padding-right: 0;
+        max-width: 680px;
     }
     @include breakpoint($x-large) {
         padding-right: 0;
+        max-width: 800px;
     }
 
     &__title {

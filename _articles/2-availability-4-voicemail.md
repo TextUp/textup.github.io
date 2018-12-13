@@ -10,20 +10,20 @@ For incoming calls, you can either have TextUp read your away message or you can
 
 ## Option 1: Reading away message
 
-![Reading away message with specified voice type]({{ site.baseurl }}/assets/images/support/away-message-voice-type.gif){: .align-right.image.image--with-shadow} The first option is to have TextUp read your away message. You also have the option to customize the voice type used by TextUp to read this message.
+![Reading away message with specified voice type]({{ site.baseurl }}/assets/images/support/away-message-voice-type.gif){: .align-right.image.image--article.image.image--article.image--with-shadow} The first option is to have TextUp read your away message. You also have the option to customize the voice type used by TextUp to read this message.
 
 {% include step-separator.md %}
 
 ## Option 2: Recording voicemail greeting
 
-![Selecting the option to use the voicemail greeting]({{ site.baseurl }}/assets/images/support/away-message-use-recording.gif){: .align-right.image.image--with-shadow} Select the radio button next to "Use voicemail recording" to use a custom recorded message instead of having TextUp read your away message. **Note that you must have a saved recorded greeting or else TextUp will fall back to the away message even if this option is selected.**
+![Selecting the option to use the voicemail greeting]({{ site.baseurl }}/assets/images/support/away-message-use-recording.gif){: .align-right.image.image--article.image.image--article.image--with-shadow} Select the radio button next to "Use voicemail recording" to use a custom recorded message instead of having TextUp read your away message. **Note that you must have a saved recorded greeting or else TextUp will fall back to the away message even if this option is selected.**
 
 {% include step-separator.md %}
 
-![Recording voicemail greeting in the browser]({{ site.baseurl }}/assets/images/support/away-message-recording-in-browser.gif){: .align-right.image.image--with-shadow} If you want to use a custom voicemail greeting, you need to first record a greeting message. If your browser supports audio recording, press the recording button to start recording. When you are done recording, press the stop button to listen to your message. You may redo this recording as many times as you like.
+![Recording voicemail greeting in the browser]({{ site.baseurl }}/assets/images/support/away-message-recording-in-browser.gif){: .align-right.image.image--article.image.image--article.image--with-shadow} If you want to use a custom voicemail greeting, you need to first record a greeting message. If your browser supports audio recording, press the recording button to start recording. When you are done recording, press the stop button to listen to your message. You may redo this recording as many times as you like.
 
 {% include step-separator.md %}
 
-![Recording voicemail greeting over the phone]({{ site.baseurl }}/assets/images/support/away-message-recording-over-phone.gif){: .align-right.image.image--with-shadow} If your browser does not support audio recording, press the "Call me to record" link to have TextUp call your personal phone so you can record and preview your voicemail greeting.
+![Recording voicemail greeting over the phone]({{ site.baseurl }}/assets/images/support/away-message-recording-over-phone.gif){: .align-right.image.image--article.image.image--article.image--with-shadow} If your browser does not support audio recording, press the "Call me to record" link to have TextUp call your personal phone so you can record and preview your voicemail greeting.
 
 {% include step-separator.md %}
