@@ -26,19 +26,17 @@
     }
 }
 
-.search-content {
-    @extend .t-body;
-
-    .search-input {
-        border-bottom: 1px solid $border-color;
-        border-radius: 0;
-        padding: ($baseunit / 2) 0;
+.results {
+    &--light * {
+        color: $color-white !important;
     }
-    .results {
-        &__found {
-            margin-bottom: $baseunit * 2;
-            font-size: $baseunit;
-        }
+    &__found {
+        margin: $baseunit 0;
+        font-size: $baseunit;
+    }
+    & > :last-child {
+        padding-bottom: $baseunit;
+        border-bottom: 1px solid $color-white;
     }
 }
 

@@ -16,12 +16,17 @@
 .form {
     position: relative;
     background-color: transparent;
+    padding: $baseunit 0;
 
     &__item {
         @extend .form-control;
 
         margin-bottom: $spacing;
         border-width: 0;
+
+        &--no-spacing {
+            margin-bottom: 0;
+        }
     }
     &__honeypot {
         position: absolute;

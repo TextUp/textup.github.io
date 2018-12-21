@@ -120,11 +120,6 @@ function contactFormInit() {
   $(CONTACT_FORM_PENDING_SELECTOR).addClass("hidden");
   $(CONTACT_FORM_SUCCESS_SELECTOR).addClass("hidden");
   $(CONTACT_FORM_SPAM_SELECTOR).addClass("hidden");
-  setTimeout(function() {
-    if (grecaptcha) {
-      grecaptcha.reset();
-    }
-  }, 500);
 }
 
 function contactFormPending() {

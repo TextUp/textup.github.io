@@ -204,15 +204,6 @@ html {
             height: 100%;
         }
     }
-    &__search {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        height: 100%;
-        padding: $baseunit ($baseunit * 1.5);
-        margin: 0;
-    }
     &__nav {
         display: none;
 
