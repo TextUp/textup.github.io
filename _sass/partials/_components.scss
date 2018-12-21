@@ -33,6 +33,21 @@
         left: $baseunit * 1000;
     }
 }
+// [FUTURE] remove this when we consolidate core styles
+.form__item--match-app-styling {
+    background-color: #fff;
+    border: 1px solid #89aab8;
+    border-radius: 3px;
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: #145571;
+        outline: 0;
+    }
+}
 
 .button {
     &.button--expand-width {
@@ -169,5 +184,16 @@
             background-color: $color-seafoam;
             opacity: 1;
         }
+    }
+}
+
+.embedded-search {
+    padding-top: $baseunit * 3;
+
+    &__control {
+        position: fixed;
+        top: 0;
+        background-color: $color-white;
+        z-index: 99;
     }
 }

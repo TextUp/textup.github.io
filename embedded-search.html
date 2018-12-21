@@ -1,0 +1,15 @@
+---
+layout: barebones
+---
+
+<div class="embedded-search">
+    <input id="search"
+    type="text"
+    class="form__item form__item--no-spacing form__item--match-app-styling embedded-search__control"
+    placeholder="Search for a support article..." />
+    <div id="results" class="results pad-l pad-r"></div>
+</div>
+
+{% include scripts.html %}
+<script src="//cdn.jsdelivr.net/npm/mutationobserver-shim/dist/mutationobserver.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/embedded-search.js"></script>

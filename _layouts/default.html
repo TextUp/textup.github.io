@@ -1,42 +1,25 @@
 ---
+layout: barebones
 ---
+{% include head/custom.html %}
 
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
-  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
--->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<a class="skipnav" href="#textup-main-content">Skip to after navigation</a>
 
-  <body class="overall layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+{% include browser-upgrade.html %}
+{% include nav-drawer.html %}
 
-    <a class="skipnav" href="#textup-main-content">Skip to after navigation</a>
-
-    {% include browser-upgrade.html %}
-    {% include nav-drawer.html %}
-
-    <div class="overall__overlay can-toggle-nav-drawer"></div>
-    <div class="overall__content">
-      {% include masthead.html %}
-      <main id="textup-main-content" role="main" class="overall__content__main">
+<div class="overall__overlay can-toggle-nav-drawer"></div>
+<div class="overall__content">
+    {% include masthead.html %}
+    <main id="textup-main-content" role="main" class="overall__content__main">
         <a href="#textup-main-content" class="overall__content__top"></a>
-        <div class="initial-content">
-          {{ content }}
-        </div>
-      </main>
-      <div class="footer">
-          {% include footer/custom.html %}
-          {% include footer.html %}
-      </div>
+        {{ content }}
+    </main>
+    <div class="footer">
+        {% include footer/custom.html %}
+        {% include footer.html %}
     </div>
 
     {% include scripts.html %}
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"188b910ba70aca78678e445fc","lid":"c565633eb3","uniqueMethods":true}) })</script>
-  </body>
-</html>
+    {% include scripts/custom.html %}
+</div>
