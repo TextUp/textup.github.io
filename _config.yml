@@ -1,4 +1,4 @@
-remote_theme: "mmistakes/minimal-mistakes@4.13.0"
+remote_theme: "mmistakes/minimal-mistakes@4.14.1"
 
 title: "TextUp"
 title_separator: "|"
@@ -16,6 +16,11 @@ footer_scripts:
   - assets/js/_main.js
   - assets/js/landing.js
 
+env:
+  RECAPTCHA_TEST_ENDPOINT: "https://services.textup.org/human-verification"
+  RECAPTCHA_SITE_KEY: "6LczZIMUAAAAAEsmmv6hXkCqxFoq5nT7dZbgN4Yi"
+  GOOGLE_ANALYTICS_ID: "UA-124579992-1"
+
 # Caution: Inline JavaScript comments can cause problems with compress.html, so be sure to
 # /* comment this way */ and avoid // these sorts of comments.
 compress_html:
@@ -28,6 +33,7 @@ sass:
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
 
 collections:
   articles:

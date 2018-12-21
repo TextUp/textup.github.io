@@ -7,6 +7,14 @@
 }
 
 /**
+ * Hide reCAPTCHA badge because we added the required attribution text
+ */
+
+.grecaptcha-badge {
+    @extend .form__honeypot;
+}
+
+/**
  * For minimal mistakes theme
  */
 

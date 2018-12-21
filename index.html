@@ -646,12 +646,33 @@ layout: default
             <span class="heading__subtitle">we would love to hear from you</span>
             Contact <span class="heading--color-brand">us</span>
         </h2>
-        <div id="textup-landing-form-submit" class="landing__content hidden pad-b-double">
-            <h3 class="heading heading--h3 heading--center heading--no-transform">
+        <div id="textup-landing-contact-form-pending" class="landing__content hidden pad-b-double">
+            <h4 class="heading heading--h4 heading--center heading--no-transform">
+                Submitting your message...
+            </h4>
+        </div>
+        <div id="textup-landing-contact-form-spam" class="landing__content hidden pad-b-double">
+            <h4 class="heading heading--h4 heading--center heading--no-transform">
+                We couldn't confirm that you are not a bot.
+                <br>
+                <br>
+                Please
+                <a href="mailto:connect@textup.org?Subject=Inquiry%20From%20Website"
+                    target="_top"
+                    rel="noopener noreferrer"
+                    class="heading--color-brand">
+                    contact us via email
+                </a>
+                or refresh the page to try again.
+            </h4>
+        </div>
+        <div id="textup-landing-contact-form-success" class="landing__content hidden pad-b-double">
+            <h4 class="heading heading--h4 heading--center heading--no-transform">
                 Thanks for getting in touch!
                 <br>
+                <br>
                 You'll hear back from us soon.
-            </h3>
+            </h4>
         </div>
         <iframe name="hidden-iframe" id="hidden-iframe" class='hidden'></iframe>
         <form id="textup-landing-contact-form"
@@ -693,8 +714,20 @@ layout: default
             <input type="hidden" name="draftResponse" value="[null,null,&quot;-973679672042260180&quot;]">
             <input type="hidden" name="pageHistory" value="0">
             <input type="hidden" name="fbzx" value="-973679672042260180">
+            <div id="recaptcha" class="g-recaptcha"
+                data-sitekey="{{ site.env.RECAPTCHA_SITE_KEY }}"
+                data-callback="contactFormVerifyHuman"
+                data-size="invisible"
+                data-badge="inline"></div>
             <div class="text-center">
-                <button type="submit" class="button">Send message</button>
+                <button type="submit" class="button">
+                    Send message
+                </button>
+            </div>
+            <div class="text text--size-smaller margin-t text-center">
+                This site is protected by reCAPTCHA and the Google
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and
+                <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
             </div>
         </form>
         <div class="text-center">
