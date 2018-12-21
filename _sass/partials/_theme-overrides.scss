@@ -1,3 +1,15 @@
+/**
+ * Fix mobile display of MailChimp newsletter pop-up signup form
+ */
+
+.mc-banner iframe {
+    height: auto !important;
+}
+
+/**
+ * For minimal mistakes theme
+ */
+
 #main {
     padding: 0;
 

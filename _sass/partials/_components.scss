@@ -30,6 +30,10 @@
 }
 
 .button {
+    &.button--expand-width {
+        width: 100%;
+    }
+
     &,
     &:link,
     &:visited {
