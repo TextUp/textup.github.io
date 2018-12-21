@@ -193,7 +193,12 @@
     &__control {
         position: fixed;
         top: 0;
+        width: calc(100% - #{$baseunit * 2});
+        margin: 0 $baseunit;
         background-color: $color-white;
         z-index: 99;
+    }
+    &__results {
+        padding: 0 $baseunit * 2;
     }
 }
