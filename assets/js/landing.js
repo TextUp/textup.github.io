@@ -100,7 +100,7 @@ function contactFormVerifyHuman(responseKey) {
   $.ajax({
     method: "POST",
     url: "{{ site.env.RECAPTCHA_TEST_ENDPOINT }}",
-    data: JSON.stringify({ key: responseKey }),
+    data: JSON.stringify({ key: responseKey, location: 'website' }),
     contentType: "application/json"
   }).then(submitContactForm, contactFormSpam);
 }
