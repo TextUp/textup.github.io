@@ -25,3 +25,9 @@ If the number you type in does not match an existing contact, TextUp will create
 ![Making call]({{ site.baseurl }}/assets/images/support/call-contact-making-call.png){: .align-right.image.image--article.image.image--article.image--with-shadow} TextUp will call your personal phone and then call the contact, creating a sort of three-way call between your TextUp phone number, your personal phone number, and the contact.  
 
 {% include step-separator.md %}
+
+## Cancelling ongoing call
+
+![Cancel ongoing call]({{ site.baseurl }}/assets/images/support/call-cancel-in-progress.png){: .align-right.image.image--article.image.image--article.image--with-shadow} If you accidentally started a call, you can press the "x" button next to ongoing calls to immediately cancel the call. 
+
+{% include step-separator.md %}

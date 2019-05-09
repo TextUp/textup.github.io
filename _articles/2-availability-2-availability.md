@@ -1,5 +1,5 @@
 ---
-title: "Setting availability"
+title: "Setting your availability"
 permalink: /support/articles/notifications-availability/
 excerpt: "Setting your own availability to determine when you receive notifications"
 ---

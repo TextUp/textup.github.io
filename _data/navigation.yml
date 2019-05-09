@@ -15,12 +15,14 @@ articles:
       - title: "TextUp on mobile devices"
         url: /support/articles/getting-started-textup-mobile/
 
-  - title: Availability
-    description: "Control how TextUp behaves at work and off-hours"
+  - title: Notifications
+    description: "Control how TextUp works for you at work and off-hours"
     children:
-      - title: "Receiving notifications"
+      - title: "Customizing your notifications"
+        url: /support/articles/notifications-type/
+      - title: "Adding your personal phone for notifications and calls"
         url: /support/articles/notifications-personal-phone/
-      - title: "Setting availability"
+      - title: "Setting your availability"
         url: /support/articles/notifications-availability/
       - title: "Handling texts when you are away"
         url: /support/articles/notifications-away-message/
