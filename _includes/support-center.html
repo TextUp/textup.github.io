@@ -1,0 +1,47 @@
+<article class="landing landing--bg-dark">
+    <div class="landing__container">
+        <h2 class="heading heading--h2 heading--center heading--light">
+            <span class="heading__subtitle">We're here to help</span>
+            Support Center
+        </h2>
+        <div class="landing__content form">
+            <input id="search"
+                type="text"
+                class="form__item form__item--no-spacing"
+                placeholder="Search for a support article..." />
+            <div id="results" class="results results--light"></div>
+        </div>
+        <div class="landing__content">
+            <p class="margin-t text text--light">
+                Still have questions? Contact us at
+                <a href="mailto:connect@textup.org?Subject=Support%20Question%20From%20Website"
+                    target="_top"
+                    class="text text--light">
+                    connect@textup.org
+                </a>
+            </p>
+        </div>
+    </div>
+</article>
+<div class="landing">
+    <div class="landing__container t-grid">
+        {% for section in site.data.navigation.articles %}
+            <div class="t-help-section t-grid__item t-padding--all-half">
+                <div class="t-help-section__content t-padding--all t-height--full">
+                    <a href="{{ section.children.first.url | prepend: site.baseurl }}" class="t-help-section__link">
+                        <p class="t-help-section__title text-bigger text-bold text-brand">{{ section.title }}</p>
+                    </a>
+                    <b>
+                       {{ section.children.size }}
+                        {% if section.children.size > 1 %}
+                            articles
+                        {% else %}
+                            article
+                        {% endif %}
+                    </b>
+                    <p>{{ section.description }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
