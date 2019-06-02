@@ -12,17 +12,11 @@
       <li>
         <a class="header__nav-link" href="{% if page.url != '/' %}{{ '/' | absolute_url }}{% endif %}#landing-press-section">Press</a>
       </li>
-      <li>
-        <a class="header__nav-link" href="{% if page.url != '/' %}{{ '/' | absolute_url }}{% endif %}#landing-pricing-section">Pricing</a>
-      </li>
     </div>
     <a class="header__logo" href="{% if page.url != '/' %}{{ '/' | absolute_url }}{% endif %}#textup-main-content">
       <img src="{{ site.baseurl }}/assets/images/logo.png" alt="TextUp logo">
     </a>
     <div class="header__nav header__nav--right">
-      <li>
-        <a class="header__nav-link" href="{{ site.baseurl }}/blog">Updates</a>
-      </li>
       <li>
         <a class="header__nav-link" href="{{ site.baseurl }}/support">Support</a>
       </li>
