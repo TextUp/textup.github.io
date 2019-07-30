@@ -1,5 +1,5 @@
 ---
-title: "Adding contacts"
+title: "Adding single contact"
 permalink: /support/articles/contacts-adding/
 ---
 

@@ -32,8 +32,10 @@ articles:
   - title: Contacts
     description: "Manage contacts with TextUp"
     children:
-      - title: "Adding contacts"
+      - title: "Adding single contact"
         url: /support/articles/contacts-adding/
+      - title: "Adding multiple contacts"
+        url: /support/articles/contacts-batch-adding/
       - title: "Multiple contact numbers"
         url: /support/articles/contacts-numbers/
       - title: "Archiving contacts"
